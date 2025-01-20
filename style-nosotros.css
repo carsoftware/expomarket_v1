@@ -1,0 +1,145 @@
+.pdf-container {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.pdf-container iframe {
+    width: 100%;
+    height: 800px;
+    border: none;
+}
+@media (max-width: 768px) {
+    .pdf-container iframe {
+        height: 400px;
+    }
+    
+}
+
+/* Contenedor principal */
+/* Contenedor principal */
+/* Contenedor principal */
+.container {
+    max-width: 1200px;
+  }
+
+  /* Contenedores visuales */
+  .content-box {
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .content-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+
+  /* Imagen animada */
+  .animated-image img {
+    animation: pulse 3s infinite;
+  }
+
+  @keyframes pulse {
+    0%, 100% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.05);
+    }
+  }
+
+  /* Íconos y títulos */
+  .title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    line-height: 1.4;
+  }
+
+  .certifications-icons .icon-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 100px;
+  }
+
+  /* Botones */
+  .custom-button {
+    font-size: 1rem;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+
+  .custom-button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+  }
+
+  /* Estilo responsivo */
+  @media (max-width: 992px) {
+    .pdf-container iframe {
+      height: 350px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .pdf-container iframe {
+      height: 600px !important;
+    }
+
+    .certifications-icons {
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+
+    .content-box {
+      padding: 10px;
+    }
+
+    .title {
+      font-size: 1rem;
+    }
+
+    .custom-button {
+      font-size: 0.9rem;
+      padding: 8px 16px;
+    }
+  }
+
+  @media (max-width: 576px) {
+    .pdf-container iframe {
+      height: 250px;
+    }
+
+    .certifications-icons .icon-box {
+      max-width: 80px;
+    }
+
+    .custom-button {
+      font-size: 0.85rem;
+      padding: 6px 12px;
+    }
+  }
+
+  /*- PANTALLAS PEQUEÑAS PDFS*/
+
+    @media (max-width: 576px) {
+        .pdf-container iframe {
+            height: 250px; /* Ajustar el tamaño del PDF en pantallas pequeñas */
+        }
+        .custom-button {
+            font-size: 14px; /* Hacer el texto del botón más pequeño */
+            padding: 10px 15px; /* Ajustar los botones para pantallas pequeñas */
+        }
+        .content-box {
+            padding: 15px; /* Agregar más espacio alrededor de cada contenedor */
+        }
+        .certifications-icons .icon-box {
+            margin-bottom: 15px; /* Mejorar la separación entre los íconos en pantallas pequeñas */
+        }
+    }

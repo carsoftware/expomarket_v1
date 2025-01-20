@@ -1,0 +1,802 @@
+/* Definición de fuente tipográfica personalizada 'LEIXO-DEMO' */
+@font-face {
+  font-family: 'LEIXO-DEMO'; /* Nombre de la fuente */
+  src: url(font/LEIXO-DEMO.ttf); /* Ruta a la fuente */
+}
+
+/* Estilos generales para el cuerpo del sitio */
+body {
+  font-family: 'Segoe UI', Tahoma, sans-serif !important; /* Establece la fuente predeterminada del cuerpo */
+  font-size: 16px; /* Tamaño base para textos */
+  line-height: 1.6; /* Espaciado cómodo entre líneas */
+  color: #333; /* Texto en color oscuro para buena legibilidad */
+  background-color: #f8f9fa; /* Fondo claro y neutro */
+  margin: 0; /* Elimina márgenes predeterminados */
+  padding: 0;
+  overflow-x: hidden; /* Evita el desplazamiento horizontal */
+}
+
+/* Logo: tamaño y estilo */
+.logo {
+  width: 165px; /* Ancho del logo */
+  height: auto; /* Mantiene la proporción de la imagen */
+}
+
+/* Estilos para el buscador moderno */
+.search-form {
+  width: 90%; /* El formulario ocupa todo el ancho */
+  max-width: 600px; /* Ancho máximo */
+  transition: all 0.1s ease; /* Efecto de transición suave para cualquier cambio */
+}
+
+.search-input {
+  border-radius: 10px 0 0 20px; /* Bordes redondeados del campo de búsqueda */
+  transition: box-shadow 0.3s ease; /* Efecto de transición para el enfoque del campo */
+}
+
+.search-input:focus {
+  box-shadow: 0 0 10px #242754 !important; /* Efecto de sombra cuando el campo está enfocado */
+}
+
+.search-form .btn-outline-primary {
+  border-radius: 0 20px 20px 0 !important; /* Bordes redondeados en el botón de búsqueda */
+}
+
+/* Navbar (barra de navegación) */
+.navbar {
+  padding: 0.8rem 1rem; /* Espaciado en la barra de navegación */
+  z-index: 1030; /* Prioridad en el apilamiento de elementos */
+  background-color: #edf0f3 !important; /* Color de fondo de la navbar */
+}
+
+/* Estilos de menu-link moblie */
+.nav-link{
+  font-size: 14px !important;
+  font-family: 'leixo-demo';
+}
+
+/* Estilos de menu-link escritorio */
+.dropdown-item{
+  font-family: 'leixo-demo';
+  color: #242754;
+  font-size: 12px !important;
+}
+
+/* Estilos del carusel (slideshow) */
+.carousel-item img {
+  height: 680px; /* Altura de las imágenes del carusel */
+  object-fit: cover; /* Ajuste de la imagen para que cubra completamente el área del contenedor */
+}
+.carousel-buttons {
+  position: absolute; /* Posición absoluta para los botones */
+  top: 50%; /* Alineación vertical al 50% */
+  left: 50%; /* Alineación horizontal al 50% */
+  transform: translate(-50%, -50%); /* Centra los botones en la pantalla */
+  display: flex; /* Muestra los botones en una fila */
+  gap: 10px; /* Espacio entre los botones */
+  z-index: 10; /* Asegura que los botones se muestren por encima de otros elementos */
+}
+.carousel-buttons .btn {
+  background-color: rgba(255, 255, 255, 0.5); /* Color de fondo de los botones */
+  color: #000; /* Color de texto de los botones */
+  border: none; /* Sin borde */
+  padding: 10px 20px; /* Espaciado interno */
+  border-radius: 5px; /* Bordes redondeados */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Efectos de transición para el fondo y color de texto */
+}
+.carousel-buttons .btn:hover {
+  background-color: #242754 !important; /* Fondo al pasar el mouse */
+  color: #fff; /* Color de texto al pasar el mouse */
+}
+
+/* servicios de carusel */
+.carousel-caption {
+  position: absolute; /* Posición absoluta para la leyenda */
+  bottom: 0px; /* Colocada en la parte inferior del contenedor */
+  left: 0; /* Alineada a la izquierda */
+  right: 0; /* Alineada a la derecha */
+  background-color: #242754; /* Color de fondo de la leyenda */
+  padding: 20px; /* Espaciado interno */
+  color: #fff; /* Color de texto */
+  border-radius: 10px; /* Bordes redondeados */
+}
+.carousel-caption .icon {
+  font-size: 24px; /* Tamaño del icono en la leyenda */
+  margin-right: 10px; /* Espacio a la derecha del icono */
+}
+.carousel-caption .row > div {
+  display: flex; /* Hace que los elementos dentro de la fila se alineen de manera flexible */
+  align-items: center; /* Centra los elementos verticalmente */
+}
+.carousel-caption .row > div .icon {
+  margin-right: 10px; /* Espacio a la derecha del icono */
+}
+
+/* Sección de categorías */
+.swiper-button-next,
+.swiper-button-prev {
+  color: #fff; /* Color del icono del botón */
+  background-color: #242754; /* Fondo azul de los botones */
+  border-radius: 50%; /* Bordes redondeados para hacerlo circular */
+  width: 40px; /* Ancho del botón */
+  height: 40px; /* Altura del botón */
+  display: flex; /* Hace que el botón sea un contenedor flexible */
+  justify-content: center; /* Centra el contenido horizontalmente */
+  align-items: center; /* Centra el contenido verticalmente */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra sutil para dar profundidad */
+  transition: transform 0.3s ease; /* Efecto de transición para el tamaño cuando se pasa el ratón */
+}
+
+/* Estilos title CATEGORIAS Y CATALOGO*/
+.title {
+  margin-top: 15vh; /* Para posicionar el título en el centro visible */
+  text-align: center;
+  font-family: 'leixo-demo';
+  color: #de702a;
+}
+
+/* Estilos al pasar el ratón sobre los botones de navegación */
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  transform: scale(1.1); /* Aumenta el tamaño al pasar el ratón */
+}
+
+/* Estilo para los iconos de los botones (flechas) */
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  font-size: 1.25rem; /* Tamaño del icono de la flecha */
+  font-weight: bold; /* Hace las flechas más gruesas */
+  color: #de702a;
+}
+
+/* Estilos para los slides (elementos dentro del swiper) */
+.swiper-slide {
+  display: flex; /* Contenedor flexible para los elementos dentro del slide */
+  flex-direction: column; /* Los elementos dentro del slide se apilan en una columna */
+  justify-content: center; /* Centra los elementos verticalmente */
+  align-items: center; /* Centra los elementos horizontalmente */
+  text-align: center; /* Centra el texto dentro del slide */
+  margin-top: 80px;
+}
+
+/* Estilos para las imágenes dentro de los slides */
+.swiper-slide img {
+  width: 130%; /* La imagen ocupa todo el ancho disponible */
+  max-width: 190px; /* Establece un ancho máximo para la imagen */
+  height: 150px; /* Altura fija para la imagen */
+  border-radius: 50%; /* Hace la imagen redonda */
+  object-fit: cover; /* Asegura que la imagen cubra completamente el área sin distorsionarse */
+  display: block; /* Hace que la imagen sea un bloque */
+  margin-bottom: 10px; /* Espacio debajo de la imagen */
+}
+
+/* Estilos para el título (h5) en los slides */
+.swiper-slide h5 {
+  margin-bottom: 10px; /* Espacio debajo del título */
+  font-family: 'leixo-demo'; /* Usa la fuente personalizada 'leixo-demo' */
+  color: #f39c12; /* Color dorado para el texto */
+}
+
+/* Estilos para los botones dentro de los slides */
+.swiper-slide button {
+  background-color: #242754; /* Fondo azul del botón */
+  color: #fff; /* Color blanco para el texto del botón */
+  border: none; /* Sin borde */
+  padding: 10px 20px; /* Espaciado interno del botón */
+  border-radius: 5px; /* Bordes redondeados */
+  cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Efecto de transición para el color de fondo y el tamaño */
+}
+
+/* Estilo cuando se pasa el ratón sobre el botón */
+.swiper-slide button:hover {
+  background-color:#f39c12; /* Fondo más oscuro al pasar el ratón */
+  transform: translateY(-2px); /* Mueve el botón ligeramente hacia arriba */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Añade una sombra suave */
+}
+
+/* Estilos para el contenedor principal Swiper */
+.swiper {
+  display: flex; /* Usa un contenedor flexible para los elementos */
+  align-items: center; /* Centra los elementos verticalmente */
+  overflow: hidden; /* Oculta el contenido fuera del área del swiper */
+  max-width: 100%; /* El contenedor puede ocupar todo el ancho disponible */
+  position: relative; /* Asegura que los botones se posicionen dentro del contenedor */
+}
+
+/* Posicionamiento de los botones de navegación (siguiente y anterior) */
+.swiper-button-next,
+.swiper-button-prev {
+  position: absolute; /* Posición absoluta para colocar los botones dentro del swiper */
+  top: 50%; /* Coloca los botones en la mitad vertical del swiper */
+  transform: translateY(-50%); /* Centra los botones verticalmente */
+  z-index: 10; /* Asegura que los botones estén encima del contenido */
+}
+
+/* Posicionamiento del botón anterior (izquierda) */
+.swiper-button-prev {
+  left: 0; /* Coloca el botón en el lado izquierdo */
+}
+
+/* Posicionamiento del botón siguiente (derecha) */
+.swiper-button-next {
+  right: 0; /* Coloca el botón en el lado derecho */
+}
+
+/* Responsividad para pantallas medianas */
+/* Estilos para dispositivos con un ancho máximo de 768px (típicamente móviles y tabletas) */
+@media (max-width: 768px) {
+  
+  /* Reducción del tamaño de los botones de navegación en pantallas pequeñas */
+  .swiper-button-next,
+  .swiper-button-prev {
+    width: 35px; /* Ajusta el ancho de los botones */
+    height: 35px; /* Ajusta la altura de los botones */
+  }
+
+  /* Reducción del tamaño de las flechas dentro de los botones de navegación */
+  .swiper-button-next:after,
+  .swiper-button-prev:after {
+    font-size: 1.1rem; /* Ajusta el tamaño de las flechas */
+  }
+}
+
+
+.swiper-slide img {
+  max-width: 220px; /* Ajustar el tamaño de las imágenes en pantallas medianas */
+  height: 160px;
+}
+
+.swiper-slide button {
+  padding: 9px 18px; /* Botones más pequeños */
+}
+
+.swiper-slide h5 {
+  font-size: 1.1rem; /* Ajustar el tamaño de la fuente */
+}
+
+/* catalogo */
+.card {
+  border: none; /* Elimina el borde de las tarjetas */
+  box-shadow: 0px 4px 8px #0aaed4; /* Sombra suave alrededor de las tarjetas */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición suave para el cambio de tamaño y sombra */
+  margin-top: 30px; /* Añade margen superior */
+}
+
+.card:hover {
+  transform: translateY(-5px); /* Eleva la tarjeta ligeramente al pasar el cursor */
+  box-shadow: 0px 8px 16px #242754; /* Aumenta la sombra al pasar el cursor */
+}
+
+.card-img-top {
+  max-height: 190px; /* Establece la altura máxima de la imagen */
+  object-fit: cover; /* Asegura que la imagen se recorte de manera adecuada */
+  border-bottom: 1px solid #eee; /* Añade una línea inferior */
+}
+
+.card-title {
+  font-size: 1.25rem; /* Establece el tamaño del título de la tarjeta */
+  font-weight: bold; /* Aplica negrita al título */
+  color: #242754 !important; /* Establece el color del texto */
+}
+
+.btn {
+  font-size: 0.9rem; /* Establece el tamaño de fuente en los botones */
+  padding: 8px 12px; /* Añade espaciado interno */
+  border-radius: 54px; /* Aplica bordes redondeados */
+}
+
+.btn-primary{
+  background-color: #242754 !important;
+}
+
+.input-group {
+  display: flex; /* Utiliza un diseño flexible */
+  justify-content: center; /* Centra el contenido horizontalmente */
+  align-items: center; /* Centra el contenido verticalmente */
+  gap: 5px; /* Añade espacio entre los elementos */
+}
+
+input[type="number"] {
+  width: 60px; /* Establece el ancho del campo de número */
+  height: 36px; /* Establece la altura del campo */
+  text-align: center; /* Centra el texto dentro del campo */
+  border: 1px solid #ddd; /* Añade borde delgado */
+  border-radius: 4px; /* Aplica bordes redondeados */
+  font-size: 0.9rem; /* Establece el tamaño de la fuente */
+}
+
+/* Asegurar tamaño uniforme de imágenes */
+.catalog-img {
+height: 200px; /* Ajusta el valor según tus necesidades */
+object-fit: cover; /* Mantener proporciones recortando el exceso */
+width: 100%; /* Se adapta al contenedor */
+}
+
+.fw-bold{
+  color: #de702a;
+}
+
+/* Formulario de registro */
+/* Estilo base para el h5 */
+
+h5.offcanvas-title {
+  font-size: 1.5rem; /* Establece el tamaño de la fuente a 1.5 rem (aproximadamente 24px dependiendo del tamaño base) */
+  font-weight: bold; /* Aplica el estilo de negrita al texto */
+  line-height: 1.2; /* Ajusta la altura de la línea a 1.2 veces el tamaño de la fuente */
+  text-align: center; /* Centra el texto horizontalmente */
+  font-family: 'leixo-demo'; /* Aplica la fuente 'leixo-demo' al título */
+  color:#252853;
+  margin-top: 200px;
+}
+
+
+/* Estilos para pantallas pequeñas (máximo 768px) */
+@media (max-width: 768px) {
+.logo {
+  width: 150px !important; /* Reducido el tamaño de la imagen del logo para pantallas más pequeñas (móviles) */
+  height: auto; /* Mantiene la proporción de la imagen ajustando la altura automáticamente */
+}
+
+.carousel-inner {
+  display: block; /* Cambia la disposición del contenedor del carrusel a bloque en pantallas pequeñas */
+  margin-top: 100px !important; /* Ajusta el margen superior para evitar que los elementos se solapen */
+}
+
+.carousel-item {
+  margin-bottom: 15px; /* Ajusta el margen inferior de los elementos del carrusel para mejorar su visualización */
+}
+
+.carousel-caption {
+  margin-bottom: -30px !important; /* Ajusta la posición de la leyenda del carrusel para que no se superponga con otros elementos */
+}
+}
+
+/* seccion 2 colum */
+.image-container img {
+width: 100%; /* Hace que la imagen ocupe el 100% del ancho del contenedor */
+height: 100%; /* Hace que la imagen ocupe el 100% de la altura del contenedor */
+object-fit: cover; /* Asegura que la imagen cubra el área del contenedor sin deformarse, recortando si es necesario */
+transition: transform 0.3s ease; /* Añade una transición suave de 0.3 segundos a la transformación de la imagen */
+}
+
+.image-container img:hover {
+transform: scale(1.1); /* Al pasar el cursor, la imagen se escala al 110% de su tamaño original */
+}
+
+.custom-button {
+border: none; /* Elimina el borde del botón */
+background: none; /* Elimina el fondo del botón */
+color: #007bff; /* Establece el color del texto del botón a azul */
+font-size: 1.2rem; /* Define el tamaño de la fuente del botón en 1.2 rem */
+position: relative; /* Establece el posicionamiento relativo para el botón */
+}
+
+.custom-button:hover {
+color: #0056b3; /* Al pasar el cursor, cambia el color del texto a un tono de azul más oscuro */
+}
+
+.custom-button::after {
+content: ''; /* Crea un pseudo-elemento vacío */
+display: block; /* Establece que el pseudo-elemento será un bloque */
+width: 0; /* Establece el ancho inicial del pseudo-elemento a 0 */
+height: 2px; /* Establece la altura del pseudo-elemento a 2px */
+background: #007bff; /* Define el color de fondo del pseudo-elemento a azul */
+transition: width 0.3s; /* Añade una transición suave de 0.3 segundos a la propiedad de ancho */
+}
+
+.custom-button:hover::after {
+width: 100%; /* Al pasar el cursor, el pseudo-elemento se expande a 100% de ancho */
+}
+
+.content-box {
+background-color: #f8f9fa; /* Establece el color de fondo a un gris claro */
+padding: 20px; /* Añade un espaciado de 20px alrededor del contenido */
+display: flex; /* Establece un modelo de diseño flexible para los elementos hijos */
+flex-direction: column; /* Organiza los elementos hijos en una columna */
+justify-content: center; /* Centra los elementos hijos verticalmente */
+text-align: center; /* Centra el texto dentro del contenedor */
+font-family: Arial, Helvetica, sans-serif; /* Establece la fuente a Arial o una fuente sans-serif de respaldo */
+color: #242754; /* Establece el color del texto a un tono oscuro de azul */
+}
+
+.title-column-2 {
+font-family: 'leixo-demo' !important; /* Aplica la fuente 'leixo-demo' al título */
+color: #242754;
+}
+
+.row-equal {
+height: 100%; /* Hace que la fila ocupe toda la altura del contenedor */
+}
+
+.row-equal > div {
+display: flex; /* Establece un modelo de diseño flexible para los elementos hijos */
+flex-direction: column; /* Organiza los elementos hijos en una columna */
+}
+
+
+
+/*-map--*/
+/* Clase para aplicar la animación de desvanecimiento */
+.fade-in {
+opacity: 1; /* Establece la opacidad inicial en 0 (completamente invisible) */
+animation: fadeIn 1s forwards; /* Aplica la animación 'fadeIn' durante 1 segundo, manteniendo el estado final después de la animación */
+}
+
+/* Variantes con retrasos en la animación */
+.fade-in.delay-1 {
+animation-delay: 0.5s; /* Añade un retraso de 0.5 segundos antes de iniciar la animación */
+}
+
+.fade-in.delay-2 {
+animation-delay: 1s; /* Añade un retraso de 1 segundo antes de iniciar la animación */
+}
+
+.fade-in.delay-3 {
+animation-delay: 1.5s; /* Añade un retraso de 1.5 segundos antes de iniciar la animación */
+}
+
+.fade-in.delay-4 {
+animation-delay: 2s; /* Añade un retraso de 2 segundos antes de iniciar la animación */
+}
+
+/* Definición de la animación 'fadeIn' */
+@keyframes fadeIn {
+to {
+  opacity: 1; /* Al final de la animación, la opacidad se establece en 1 (totalmente visible) */
+}
+}
+
+
+
+/*-footer--*/
+/* Estilo para el icono con transición al pasar el cursor */
+.transition-icon:hover {
+color: #007bff; /* Cambia el color del icono a azul cuando el cursor pasa sobre él */
+transition: color 0.3s ease; /* Aplica una transición suave de 0.3 segundos al cambio de color */
+}
+
+/* Estilo para los enlaces dentro de una lista en el footer al pasar el cursor */
+footer ul li a:hover {
+text-decoration: underline; /* Subraya el enlace cuando el cursor pasa sobre él */
+}
+
+/* Ajustes para pantallas medianas */
+@media (max-width: 768px) {
+h5.offcanvas-title {
+ display: none;
+  
+}
+}
+
+/* Ajustes para pantallas pequeñas */
+@media (max-width: 576px) {
+h5.offcanvas-title {
+  font-size: 1rem; /* Tamaño más pequeño para móviles */
+  display: none;
+}
+}
+
+/* Estilo para cuando el campo de formulario tiene el foco */
+.form-control:focus {
+box-shadow: 0 0 10px rgba(0, 123, 255, 0.5); /* Añade una sombra azul al campo cuando está en foco */
+border-color: #007bff; /* Cambia el color del borde a azul */
+}
+
+/* Transición suave en la etiqueta del formulario flotante */
+.form-floating label {
+transition: all 0.3s ease; /* Aplica una transición suave a todos los cambios de la etiqueta */
+}
+
+/* Efecto cuando el campo de formulario está en foco y la etiqueta se mueve */
+.form-floating .form-control:focus + label {
+color: #007bff; /* Cambia el color de la etiqueta a azul cuando el campo tiene el foco */
+transform: translateY(-1.5rem) scale(0.85); /* Mueve la etiqueta hacia arriba y la reduce de tamaño */
+}
+
+/* Animación de entrada para elementos con la clase .fade-in */
+.fade-in {
+animation: fadeIn 1s ease-in-out; /* Aplica la animación fadeIn en 1 segundo con transición suave */
+}
+
+/* Definición de la animación fadeIn */
+@keyframes fadeIn {
+from { opacity: 0; transform: translateY(20px); } /* Empieza invisible y desplazado hacia abajo */
+to { opacity: 1; transform: translateY(0); } /* Termina visible y en su posición original */
+}
+
+/* Estilo para el contenedor con la superposición de texto */
+.overlay-container {
+position: relative; /* El contenedor tiene posición relativa para poder alinear elementos internos */
+text-align: center; /* Centra el texto horizontalmente */
+color: white; /* Cambia el color del texto a blanco */
+}
+
+/* Estilo para el formulario flotante centrado */
+.overlay-form {
+position: absolute; /* Posiciona el formulario de manera absoluta dentro del contenedor */
+top: 50%; /* Lo coloca a mitad de la altura del contenedor */
+left: 50%; /* Lo coloca a mitad del ancho del contenedor */
+transform: translate(-50%, -50%); /* Centra el formulario utilizando una traslación negativa */
+background: rgba(0, 0, 0, 0.1); /* Fondo semitransparente negro */
+padding: 20px; /* Añade espacio interno alrededor del formulario */
+border-radius: 10px; /* Bordes redondeados */
+width: 90%; /* El formulario ocupa el 90% del ancho del contenedor */
+max-width: 800px; /* El formulario tiene un ancho máximo de 800px */
+}
+
+/* Estilo para formularios horizontales */
+.form-horizontal {
+display: flex; /* Utiliza flexbox para organizar los elementos */
+gap: 10px; /* Espacio de 10px entre los elementos */
+align-items: center; /* Alinea los elementos en el centro verticalmente */
+justify-content: center; /* Alinea los elementos al centro horizontalmente */
+flex-wrap: wrap; /* Permite que los elementos se envuelvan si no caben en una línea */
+}
+
+/* Estilo para los campos de formulario dentro de un formulario horizontal */
+.form-horizontal .form-floating {
+flex: 1; /* Los campos ocupan un espacio proporcional */
+min-width: 150px; /* El ancho mínimo de los campos es 150px */
+}
+
+/* Estilo para los botones dentro de un formulario horizontal */
+.form-horizontal button {
+flex: 0 0 auto; /* Los botones no crecen ni se encogen, se ajustan al tamaño de su contenido */
+}
+
+/* Estilos para pantallas pequeñas (máximo de 768px de ancho) */
+@media (max-width: 768px) {
+.overlay-form {
+  padding: 15px; /* Reduce el espacio interno en pantallas pequeñas */
+}
+
+.form-horizontal {
+  flex-direction: column; /* Los elementos se colocan en columna */
+  gap: 15px; /* Aumenta el espacio entre los elementos */
+}
+}
+
+/* Estilo para las imágenes de fondo que cubren la pantalla */
+img {
+height: 100vh; /* La imagen cubre toda la altura de la ventana */
+object-fit: cover; /* La imagen se recorta para mantener su proporción sin deformarse */
+}
+
+/* Estilos de responsividad para pantallas pequeñas */
+@media (max-width: 768px) {
+.overlay-form {
+  padding: 15px; /* Reduce el espacio interno en pantallas pequeñas */
+}
+
+.form-horizontal {
+  flex-direction: column; /* Organiza los elementos en una columna */
+  gap: 15px; /* Aumenta el espacio entre los elementos */
+}
+}
+
+/* Estilo para las imágenes que cubren toda la pantalla */
+img {
+height: 100vh; /* La imagen ocupa toda la altura de la ventana */
+object-fit: cover; /* Mantiene las proporciones de la imagen sin distorsionarla */
+}
+
+/* Definición de la animación fadeIn (ya mencionada antes) */
+@keyframes fadeIn {
+from { opacity: 0; transform: translateY(20px); } /* Inicia desde invisibilidad y desplazada hacia abajo */
+to { opacity: 1; transform: translateY(0); } /* Termina visible y en su posición original */
+}
+
+/* Estilos para pantalla móvil navbar */
+@media (max-width: 991px) {
+/* Columna para mobile: logo, buscador, home, dropdown, iconos */
+.navbar-nav {
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.navbar-nav .nav-item {
+  margin: 8px 0; /* Incrementé el margen para mayor separación */
+}
+
+.search-form {
+  margin-top: 10px;
+  width: 95%;/*ucido un poco el tamaño para que se vea mejor en móviles */
+}
+
+.navbar .d-none.d-lg-flex {
+  display: none;
+}
+
+.navbar .d-flex.align-items-center {
+  width: 100%;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+/* Los enlaces Home y Páginas ahora están en la misma columna que los iconos */
+.navbar-collapse {
+  width: 100%;
+}
+
+/* Asegurando que la navbar se muestre correctamente */
+.navbar-toggler {
+  display: block; /* Aseguramos que el botón de toggle sea visible en móviles */
+}
+}
+
+/* Responsividad: Ajustes para pantallas pequeñas */
+@media (max-width: 576px) {
+.swiper-button-next,
+.swiper-button-prev {
+  width: 30px;
+  height: 30px;
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  font-size: 1rem;
+}
+
+.swiper-slide img {
+  max-width: 120px; /* Reduce el tamaño de las imágenes en pantallas pequeñas */
+  height: 120px;
+}
+
+.swiper-slide button {
+  padding: 8px 15px; /* Botones más pequeños en pantallas pequeñas */
+}
+
+.swiper-slide h5 {
+  font-size: 1rem; /* Reducir el tamaño de la fuente en pantallas pequeñas */
+}
+.product-card{
+  width: 100% !important;  /* Todas las imágenes ocuparán el 100% del contenedor */
+  height: 200px !important; /* Ajusta a una altura uniforme */
+  object-fit: cover !important; /* Corta el exceso y mantiene las proporciones */
+}
+
+}
+
+/* Transición para el menú lateral (offcanvas) */
+.offcanvas {
+  transition: transform 0.4s ease; /* Efecto de transición para el menú lateral */
+}
+
+
+
+
+
+
+
+/* Estilos de iconos para escritorio*/
+.icon-container {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.icon-link {
+  color:#242754;
+  font-size: 18px; /* Aumenta el tamaño del ícono */
+  text-decoration: none;
+  transition: color 0.3s ease, transform 0.3s ease;
+  margin-left: 15px;
+}
+
+.icon-link:hover {
+  color:#f39c12; /* Cambia de color en hover */
+  transform: scale(1.2); /* Agranda ligeramente el ícono */
+}
+
+.icon-divider {
+  width: 1px;
+  height: 24px;
+  background-color: #0aaed4; /* Color de la línea vertical */
+  margin: 0 8px; /* Espaciado entre íconos y línea */
+}
+
+.badge {
+  font-size: 12px; /* Tamaño ajustado para el contador */
+}
+
+/* Responsividad: Ajustes para pantallas pequeñas de iconos*/
+@media (max-width: 768px) {
+  .icon-link {
+    font-size: 20px; /* Tamaño menor en pantallas pequeñas */
+  }
+  .icon-divider {
+    height: 20px; /* Reduce la altura de la línea en pantallas pequeñas */
+  }
+}
+
+@media (max-width: 576px) {
+  .icon-link {
+    font-size: 18px; /* Más pequeño en pantallas muy pequeñas */
+  }
+  .icon-divider {
+    height: 18px;
+  }
+}
+
+
+
+
+/* footer*/
+/* Transiciones suaves para íconos e imágenes */
+.transition-icon {
+  transition: transform 0.3s ease, color 0.3s ease; /* Aplica una transición suave tanto al cambio de color como al cambio de transformación (escala) */
+  }
+  
+  .transition-icon:hover {
+  transform: scale(1.2); /* Al pasar el cursor, aumenta el tamaño del ícono al 120% */
+  color: #0d6efd; /* Cambia el color a un tono azul */
+  }
+  
+  img.rounded {
+  transition: transform 0.3s ease; /* Aplica una transición suave al cambio de tamaño de la imagen */
+  }
+  
+  img.rounded:hover {
+  transform: scale(1.1); /* Al pasar el cursor, aumenta el tamaño de la imagen al 110% */
+  }
+  
+  @media (max-width: 768px) { /* Aplica los siguientes estilos solo en pantallas con un ancho máximo de 768px */
+  footer .container {
+    padding: 15px; /* Reduce el espacio alrededor del contenido del footer */
+  }
+  
+  footer img.img-fluid {
+    margin: 0 auto; /* Centra la imagen */
+    display: block; /* Asegura que la imagen se muestre como bloque */
+  }
+  
+  footer .d-flex.gap-4 {
+    justify-content: center; /* Centra los elementos en el contenedor flexible */
+    gap: 1rem; /* Reduce el espacio entre los elementos */
+  }
+  
+  footer .transition-icon {
+    font-size: 1.5rem; /* Reduce el tamaño de los íconos */
+  }
+  
+  footer .d-flex.flex-column.gap-3 {
+    gap: 1.5rem; /* Ajusta el espacio entre los elementos cuando están en disposición de columna */
+  }
+  
+  footer .d-flex.align-items-center {
+    flex-direction: column; /* Cambia la dirección del eje a columna */
+    align-items: center; /* Centra los elementos en el eje transversal */
+    text-align: center; /* Centra el texto */
+  }
+  
+  footer .d-flex.align-items-center img {
+    width: 60px; /* Establece el tamaño de la imagen */
+    height: 60px; /* Establece la altura de la imagen */
+    margin-bottom: 0.5rem; /* Añade un margen inferior pequeño */
+  }
+  
+  footer .d-flex.align-items-center p {
+    font-size: 0.9rem; /* Reduce el tamaño del texto */
+  }
+  
+  footer form .form-label {
+    font-size: 0.9rem; /* Reduce el tamaño de las etiquetas del formulario */
+  }
+  
+  footer form input,
+  footer form textarea {
+    font-size: 0.9rem; /* Reduce el tamaño del texto en los campos del formulario */
+    padding: 0.5rem; /* Ajusta el espaciado interno de los campos del formulario */
+  }
+  
+  footer form button {
+    font-size: 0.9rem; /* Reduce el tamaño del texto en el botón */
+    padding: 0.5rem; /* Ajusta el espaciado interno del botón */
+  }
+  
+  footer .text-center p {
+    font-size: 0.8rem; /* Reduce aún más el tamaño del texto en el footer */
+  }
+  }
