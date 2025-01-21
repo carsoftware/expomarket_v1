@@ -51,11 +51,16 @@ body {
 
 /* Estilos de menu-link moblie */
 .nav-link{
-  font-size: 14px !important;
-  font-family: 'leixo-demo';
+  font-size: 15px !important;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-
+/* Estilos de menu-link escritorio */
+.dropdown-item{
+  font-family: Arial, Helvetica, sans-serif;
+  color: #242754;
+  font-size: 15px !important;
+}
 
 
 /* Estilo para que el sub-dropdown se alinee a la derecha en pantallas grandes */
@@ -71,10 +76,6 @@ body {
 .dropdown-submenu:hover .dropdown-menu {
   display: block;
 }
-
-
-
-
 
 
 /* Transición para el menú lateral (offcanvas) */
@@ -109,15 +110,9 @@ body {
   margin: 0 8px; /* Espaciado entre íconos y línea */
 }
 
+/* contador carrito */
 .badge {
   font-size: 12px; /* Tamaño ajustado para el contador */
-}
-
-/* Estilos de menu-link escritorio */
-.dropdown-item{
-  font-family: 'leixo-demo';
-  color: #242754;
-  font-size: 12px !important;
 }
 
 /* Estilos del carusel (slideshow) */
@@ -561,19 +556,37 @@ img.rounded:hover {
   height: auto; /* Mantiene la proporción de la imagen ajustando la altura automáticamente */
 }
 
-.carousel-inner {
-  display: block; /* Cambia la disposición del contenedor del carrusel a bloque en pantallas pequeñas */
-  margin-top: 100px !important; /* Ajusta el margen superior para evitar que los elementos se solapen */
-}
-
-.carousel-item {
-  margin-bottom: 15px; /* Ajusta el margen inferior de los elementos del carrusel para mejorar su visualización */
+.carousel-item img {
+  height: 650px; /* Altura de las imágenes del carusel */
+  object-fit: cover; /* Ajuste de la imagen para que cubra completamente el área del contenedor */
+  margin-top: 180px;
 }
 
 .carousel-caption {
-  margin-bottom: -30px !important; /* Ajusta la posición de la leyenda del carrusel para que no se superponga con otros elementos */
+  position: absolute; /* Posición absoluta para la leyenda */
+  bottom: 0px; /* Colocada en la parte inferior del contenedor */
+  left: 0; /* Alineada a la izquierda */
+  right: 0; /* Alineada a la derecha */
+  background-color: #333988; /* Color de fondo de la leyenda */
+  padding: 20px; /* Espaciado interno */
+  color: #fff; /* Color de texto */
+  border-radius: 10px; /* Bordes redondeados */
 }
+
+.carousel-caption .icon {
+  font-size: 24px; /* Tamaño del icono en la leyenda */
+  margin-right: 10px; /* Espacio a la derecha del icono */
 }
+
+.carousel-caption .row > div {
+  display: flex; /* Hace que los elementos dentro de la fila se alineen de manera flexible */
+  align-items: center; /* Centra los elementos verticalmente */
+}
+
+.carousel-caption .row > div .icon {
+  margin-right: 10px; /* Espacio a la derecha del icono */
+}
+
 
 /* Definición de la animación 'fadeIn' */
 @keyframes fadeIn {
@@ -767,7 +780,7 @@ to { opacity: 1; transform: translateY(0); } /* Termina visible y en su posició
 }
 .product-card{
   width: 100% !important;  /* Todas las imágenes ocuparán el 100% del contenedor */
-  height: 200px !important; /* Ajusta a una altura uniforme */
+  height: 150px !important; /* Ajusta a una altura uniforme */
   object-fit: cover !important; /* Corta el exceso y mantiene las proporciones */
 }
 
@@ -871,3 +884,4 @@ to { opacity: 1; transform: translateY(0); } /* Termina visible y en su posició
   }
 }
 
+}
