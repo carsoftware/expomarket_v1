@@ -19,7 +19,7 @@
   <link rel="stylesheet" href="styles.css">
   <!-- animacion con scroll AOS del titulo catalogo -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  
   
 </head>
 
@@ -47,6 +47,8 @@
         </div>
       </form>
 
+
+      <!-- navbar -->
       <div class="collapse navbar-collapse d-flex justify-content-center" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item me-3">
@@ -79,34 +81,42 @@
         </ul>
       </div>
       
-      
-      
-      
-
       <!-- Íconos en escritorio y móvil -->
       <div class="d-flex align-items-center icon-container">
         <a href="https://wa.me/573174262521" class="icon-link me-4">
           <i class="fa-brands fa-whatsapp"></i>
         </a>
         <div class="icon-divider"></div>
-        <a href="#" class="icon-link me-4">
+        <a href="https://www.instagram.com/expomarket.co?utm_source=qr&igsh=MTJtN2lxNXFtZzNkNQ==" class="icon-link me-4">
           <i class="fa-brands fa-instagram"></i>
         </a>
         <div class="icon-divider"></div>
-        <a href="#" class="icon-link me-4">
+        <a href="https://www.google.com/maps/place/Edificio+Campestre+Towers/@3.3715931,-76.5432015,17z/data=!3m1!4b1!4m6!3m5!1s0x8e30a17bb0a2baa7:0x2b3e120a224b6599!8m2!3d3.3715931!4d-76.5406266!16s%2Fg%2F11b7qc3zn7?authuser=0&entry=ttu&g_ep=EgoyMDI1MDExNS4wIKXMDSoASAFQAw%3D%3D" class="icon-link me-4">
           <i class="fas fa-map-marker-alt"></i>
         </a>
+
         <div class="icon-divider"></div>
-        <a href="#" class="icon-link me-4">
+        
+        <a href="#" class="icon-link me-4 " id="userDropdown" data-bs-toggle="dropdown" aria-expanded="false">
           <i class="fas fa-user"></i>
         </a>
+        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
+          <li><a class="dropdown-item" href="#">Perfil</a></li>
+          <li><a class="dropdown-item" href="#">Configuración</a></li>
+          <li><a class="dropdown-item" href="#">Historial de Compras</a></li>
+          <li><hr class="dropdown-divider"></li>
+          <li><a class="dropdown-item" href="#">Cerrar Sesión</a></li>
+        </ul>
+            
         <div class="icon-divider"></div>
+
         <a href="#" class="icon-link position-relative">
           <i class="fas fa-shopping-cart"></i>
           <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
             0
           </span>
         </a>
+        
       </div>
       
     </div>  
@@ -744,28 +754,30 @@
     // Inicializar AOS
     AOS.init();
   </script>
+  
 
-<script>
-  // Para hacer funcionar el sub-dropdown
-  document.querySelectorAll('.dropdown-submenu > a').forEach(function(submenu) {
-    submenu.addEventListener('click', function(e) {
-      const subMenu = submenu.nextElementSibling;
-      const isVisible = subMenu.classList.contains('show');
-      document.querySelectorAll('.dropdown-menu .show').forEach(function(openSubMenu) {
-        openSubMenu.classList.remove('show');
+  <script>
+    // Para hacer funcionar el sub-dropdown
+    document.querySelectorAll('.dropdown-submenu > a').forEach(function(submenu) {
+      submenu.addEventListener('click', function(e) {
+        const subMenu = submenu.nextElementSibling;
+        const isVisible = subMenu.classList.contains('show');
+        document.querySelectorAll('.dropdown-menu .show').forEach(function(openSubMenu) {
+          openSubMenu.classList.remove('show');
+        });
+        if (!isVisible) {
+          subMenu.classList.add('show');
+        }
+        e.stopPropagation();
       });
-      if (!isVisible) {
-        subMenu.classList.add('show');
-      }
-      e.stopPropagation();
     });
-  });
-</script>
+  </script>
 
-
+ 
   <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
   <script src="js/catalogo.js"></script>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
