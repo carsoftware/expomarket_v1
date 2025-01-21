@@ -582,31 +582,32 @@ to {
 }
 }
 
-  /* Ajuste de botones en pantallas pequeñas */
-  @media (max-width: 768px) {
-    .carousel-buttons {
-      flex-direction: column;
-      gap: 1rem;
-    }
-  }
-
+/* Ajuste de botones en pantallas pequeñas */
+@media (max-width: 768px) {
   .carousel-buttons {
-    z-index: 10; /* Asegura que los botones estén sobre la imagen */
+    flex-direction: column;
+    gap: 1rem;
   }
+}
+
+.carousel-buttons {
+  z-index: 10; /* Asegura que los botones estén sobre la imagen */
+}
+
 /* Ajustes para pantallas medianas */
 @media (max-width: 768px) {
-h5.offcanvas-title {
- display: none;
-  
-}
-}
-
-/* Ajustes para pantallas pequeñas */
-@media (max-width: 576px) {
-h5.offcanvas-title {
-  font-size: 1rem; /* Tamaño más pequeño para móviles */
+  h5.offcanvas-title {
   display: none;
-}
+    
+  }
+  }
+
+  /* Ajustes para pantallas pequeñas */
+  @media (max-width: 576px) {
+  h5.offcanvas-title {
+    font-size: 1rem; /* Tamaño más pequeño para móviles */
+    display: none;
+  }
 }
 
 /* Para pantallas móviles */
