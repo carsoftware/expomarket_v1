@@ -126,29 +126,18 @@ body {
   object-fit: cover; /* Ajuste de la imagen para que cubra completamente el área del contenedor */
 }
 
-.carousel-buttons {
-  position: absolute; /* Posición absoluta para los botones */
-  top: 50%; /* Alineación vertical al 50% */
-  left: 50%; /* Alineación horizontal al 50% */
-  transform: translate(-50%, -50%); /* Centra los botones en la pantalla */
-  display: flex; /* Muestra los botones en una fila */
-  gap: 10px; /* Espacio entre los botones */
-  z-index: 10; /* Asegura que los botones se muestren por encima de otros elementos */
-}
+  /* Estilo para los botones del carrusel */
+  .carousel-buttons .btn {
+    opacity: 0.9;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+  }
 
-.carousel-buttons .btn {
-  background-color: rgba(255, 255, 255, 0.5); /* Color de fondo de los botones */
-  color: #000; /* Color de texto de los botones */
-  border: none; /* Sin borde */
-  padding: 10px 20px; /* Espaciado interno */
-  border-radius: 5px; /* Bordes redondeados */
-  transition: background-color 0.3s ease, color 0.3s ease; /* Efectos de transición para el fondo y color de texto */
-}
+  .carousel-buttons .btn:hover {
+    transform: scale(1.1);
+    opacity: 1;
+  }
 
-.carousel-buttons .btn:hover {
-  background-color: #242754 !important; /* Fondo al pasar el mouse */
-  color: #fff; /* Color de texto al pasar el mouse */
-}
+
 
 /* Servicios de carusel */
 .carousel-caption {
@@ -593,7 +582,17 @@ to {
 }
 }
 
+  /* Ajuste de botones en pantallas pequeñas */
+  @media (max-width: 768px) {
+    .carousel-buttons {
+      flex-direction: column;
+      gap: 1rem;
+    }
+  }
 
+  .carousel-buttons {
+    z-index: 10; /* Asegura que los botones estén sobre la imagen */
+  }
 /* Ajustes para pantallas medianas */
 @media (max-width: 768px) {
 h5.offcanvas-title {
