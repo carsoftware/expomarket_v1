@@ -55,7 +55,10 @@ body {
   font-family: 'leixo-demo';
 }
 
-/* Estilo para que el sub-dropdown se alinee a la derecha */
+
+
+
+/* Estilo para que el sub-dropdown se alinee a la derecha en pantallas grandes */
 .dropdown-submenu .dropdown-menu {
   display: none; /* Esconde el sub-dropdown por defecto */
   position: absolute;
@@ -64,10 +67,13 @@ body {
   z-index: 1000; /* Asegura que el sub-dropdown esté encima de otros elementos */
 }
 
-/* Muestra el sub-dropdown cuando el cursor pasa sobre el elemento principal */
+/* Muestra el sub-dropdown cuando el cursor pasa sobre el elemento principal (en pantallas grandes) */
 .dropdown-submenu:hover .dropdown-menu {
   display: block;
 }
+
+
+
 
 
 
@@ -604,40 +610,46 @@ h5.offcanvas-title {
 }
 }
 
-/* Asegura que el sub-dropdown no se solape con el menú principal en pantallas pequeñas */
+/* Para pantallas móviles */
 @media (max-width: 768px) {
+  /* El comportamiento del dropdown será diferente en pantallas pequeñas */
   .dropdown-menu {
-    position: static; /* Cambia la posición a estática para que el sub-menú se muestre bajo el menú principal */
+    position: static; /* Cambia la posición a estática para que se vea debajo del elemento */
     width: 100%; /* Hace que el sub-menú ocupe el 100% del ancho */
   }
 
   .dropdown-submenu .dropdown-menu {
-    left: 0; /* El sub-dropdown aparece debajo del ítem principal */
+    display: none; /* Esconde el sub-dropdown por defecto en móviles */
   }
 
-  /* El comportamiento del dropdown será diferente en pantallas pequeñas, asegurando que se vea bien */
+  .dropdown-submenu.active .dropdown-menu {
+    display: block; /* Muestra el sub-dropdown cuando el menú está activo */
+  }
+
+  /* Asegura que los ítems en el navbar se muestren en una columna */
   .navbar-nav {
-    flex-direction: column; /* Coloca los items del navbar en columna en pantallas pequeñas */
-    align-items: center; /* Centra los items en pantallas pequeñas */
+    flex-direction: column; /* Coloca los items en columna en dispositivos móviles */
+    align-items: center; /* Centra los items */
   }
 
-  .dropdown-menu {
-    position: static;
+  /* Mostrar los dropdowns al tocar el elemento en lugar de al pasar el mouse */
+  .navbar-nav .dropdown-toggle::after {
+    content: ''; /* Elimina el icono del dropdown para que se vea limpio */
   }
 
-  /* Configura la visualización de los dropdowns en dispositivos móviles */
-  .dropdown-toggle::after {
-    content: ''; /* Elimina el icono del dropdown para mejorar el diseño en móviles */
+  /* Cambiar la apariencia del dropdown en móviles */
+  .dropdown-submenu a {
+    cursor: pointer; /* Asegura que el sub-dropdown sea interactivo */
   }
 }
 
 /* Para pantallas más grandes */
 @media (min-width: 769px) {
-  /* Se asegura que el sub-menú se muestre solo al pasar el mouse en pantallas grandes */
   .navbar-nav {
-    flex-direction: row; /* Coloca los items en fila */
+    flex-direction: row; /* Los ítems estarán en fila en pantallas grandes */
   }
 
+  /* Muestra el sub-dropdown cuando el cursor pasa sobre el ítem principal */
   .dropdown-submenu:hover .dropdown-menu {
     display: block;
   }
