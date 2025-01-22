@@ -343,7 +343,7 @@ input[type="number"] {
 
 /* Asegurar tamaño uniforme de imágenes */
 .catalog-img {
-  height: 200px; /* Ajusta el valor según tus necesidades */
+  height: auto; /* Ajusta el valor según tus necesidades */
   object-fit: cover; /* Mantener proporciones recortando el exceso */
   width: 100%; /* Se adapta al contenedor */
 }
@@ -412,7 +412,7 @@ h5.offcanvas-title {
 }
 
 .title-column-2 {
-  font-family: 'leixo-demo' !important; /* Aplica la fuente 'leixo-demo' al título */
+  font-family:Arial, Helvetica, sans-serif; /* Aplica la fuente 'leixo-demo' al título */
   color: #242754;
 }
 
