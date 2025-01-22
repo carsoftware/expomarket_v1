@@ -626,6 +626,19 @@ img.rounded:hover {
   margin-right: 10px; /* Espacio a la derecha del icono */
 }
 
+ /* Estilo para los botones del carrusel */
+ .carousel-buttons, .btn-primary .btn {
+  opacity: 0.9;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  margin-top: 50px !important;
+
+}
+
+.carousel-buttons .btn:hover {
+  transform: scale(1.1);
+  opacity: 1;
+}
+
 
 /* Definición de la animación 'fadeIn' */
 @keyframes fadeIn {
