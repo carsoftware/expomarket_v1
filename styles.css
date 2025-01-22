@@ -125,6 +125,7 @@ body {
   .carousel-buttons .btn {
     opacity: 0.9;
     transition: transform 0.3s ease, opacity 0.3s ease;
+
   }
 
   .carousel-buttons .btn:hover {
@@ -182,6 +183,7 @@ body {
   text-align: center;
   font-family: 'leixo-demo';
   color: #de702a;
+  opacity: 1; /* Evita que sobrescriba las transiciones de AOS */
 }
 
 /* Estilos al pasar el ratón sobre los botones de navegación */
@@ -319,6 +321,8 @@ body {
 
 .btn-primary {
   background-color: #242754 !important;
+  opacity: 1;
+  
 }
 
 .input-group {
@@ -421,6 +425,42 @@ h5.offcanvas-title {
   flex-direction: column; /* Organiza los elementos hijos en una columna */
 }
 
+/* recetas escritorio */
+
+.recipe-section {
+  background-color: #f9f9f9;
+  padding: 60px 20px;
+}
+.recipe-card {
+  border: none;
+  border-radius: 15px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.recipe-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+.recipe-card img {
+  height: 200px;
+  object-fit: cover;
+}
+.nutritional-info {
+  background: #e7f5e9;
+  border-left: 5px solid #4caf50;
+  padding: 15px;
+  border-radius: 10px;
+}
+.highlight {
+  background: linear-gradient(90deg, #242754, #1860ad);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.card {
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
   
 /*-map--*/
 /* Clase para aplicar la animación de desvanecimiento */
@@ -545,8 +585,6 @@ img.rounded {
 img.rounded:hover {
   transform: scale(1.1); /* Al pasar el cursor, aumenta el tamaño de la imagen al 110% */
 }
-
-
 
 
 /* Estilos para pantallas pequeñas (máximo 768px) */
