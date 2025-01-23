@@ -554,6 +554,11 @@ img {
   flex-wrap: wrap; /* Permite que los elementos se envuelvan si no caben en una línea */
 }
 
+.text-center{
+  color: #242754;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 /* Estilo para los campos de formulario dentro de un formulario horizontal */
 .form-horizontal .form-floating {
   flex: 1; /* Los campos ocupan un espacio proporcional */
