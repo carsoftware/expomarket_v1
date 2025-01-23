@@ -353,6 +353,13 @@ input[type="number"] {
 }
 
 /* Formulario de registro */
+
+.image-gallery {
+  display: flex;
+  justify-content: center; /* Centra las imágenes horizontalmente */
+  gap: 20px; /* Espacio entre las imágenes */
+}
+
 h5.offcanvas-title {
   font-size: 1.5rem; /* Establece el tamaño de la fuente a 1.5 rem */
   font-weight: bold; /* Aplica el estilo de negrita al texto */
@@ -455,6 +462,7 @@ h5.offcanvas-title {
   background: linear-gradient(90deg, #242754, #1860ad);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  margin-top: 30px;
 }
 .card {
   border: none;
@@ -465,6 +473,8 @@ h5.offcanvas-title {
   
 /*-map--*/
 /* Clase para aplicar la animación de desvanecimiento */
+
+
 .fade-in {
   opacity: 1; /* Establece la opacidad inicial en 0 (completamente invisible) */
   animation: fadeIn 1s forwards; /* Aplica la animación 'fadeIn' durante 1 segundo, manteniendo el estado final después de la animación */
