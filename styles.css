@@ -479,6 +479,23 @@ h5.offcanvas-title {
   opacity: 1; /* Establece la opacidad inicial en 0 (completamente invisible) */
   animation: fadeIn 1s forwards; /* Aplica la animación 'fadeIn' durante 1 segundo, manteniendo el estado final después de la animación */
 }
+/* color boton de map */
+.custom-btn {
+  background-color: #0aaed4 !important;
+  color:white !important ;
+  border: none;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.custom-btn:hover {
+  background-color: #1e2148 !important;
+  transform: scale(1.05);
+}
+
+.custom-btn:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.2rem rgba(36, 39, 84, 0.5);
+}
 
 /* Variantes con retrasos en la animación */
 .fade-in.delay-1 {
