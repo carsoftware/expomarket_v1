@@ -53,6 +53,7 @@ body {
 .nav-link{
   font-size: 15px !important;
   font-family: Arial, Helvetica, sans-serif;
+  color: #1e2148;
 }
 
 /* Estilos de menu-link escritorio */
@@ -62,7 +63,11 @@ body {
   font-size: 15px !important;
 }
 
-
+/* leixo-dmeo */
+.leixo-demo{
+  color: #de702a;
+  font-family: 'leixo-demo';
+}
 /* Estilo para que el sub-dropdown se alinee a la derecha en pantallas grandes */
 .dropdown-submenu .dropdown-menu {
   display: none; /* Esconde el sub-dropdown por defecto */
