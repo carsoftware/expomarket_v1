@@ -65,7 +65,7 @@ body {
 
 /* leixo-dmeo */
 .leixo-demo{
-  color: #de702a;
+  color:#de702a;
   font-family: 'leixo-demo';
 }
 /* Estilo para que el sub-dropdown se alinee a la derecha en pantallas grandes */
@@ -464,10 +464,8 @@ h5.offcanvas-title {
   border-radius: 10px;
 }
 .highlight {
-  background: linear-gradient(90deg, #242754, #1860ad);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
   margin-top: 30px;
+  color: #242754;
 }
 .card {
   border: none;
