@@ -424,7 +424,7 @@ h5.offcanvas-title {
 }
 
 .title-column-2 {
-  font-family: 'leixo-demo'; /* Aplica la fuente 'leixo-demo' al título */
+  font-family:Arial, Helvetica, sans-serif; /* Aplica la fuente 'leixo-demo' al título */
   color: #242754;
 }
 
@@ -578,7 +578,7 @@ img {
 
 .text-center{
   color: #242754;
-  font-family: 'leixo-demo';
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 /* Estilo para los campos de formulario dentro de un formulario horizontal */
