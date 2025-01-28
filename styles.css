@@ -477,118 +477,80 @@ h5.offcanvas-title {
 /*-map--*/
 /* Clase para aplicar la animación de desvanecimiento */
 
-
-.fade-in {
-  opacity: 1; /* Establece la opacidad inicial en 0 (completamente invisible) */
-  animation: fadeIn 1s forwards; /* Aplica la animación 'fadeIn' durante 1 segundo, manteniendo el estado final después de la animación */
-}
-/* color boton de map */
+/* codigo nuevo */
+/* Botones personalizados */
 .custom-btn {
-  background-color: #0aaed4 !important;
-  color:white !important ;
+  background-color: #007bff;
+  color: white;
   border: none;
-  transition: background-color 0.3s ease, transform 0.3s ease;
+  transition: all 0.3s ease-in-out;
 }
 
 .custom-btn:hover {
-  background-color: #1e2148 !important;
-  transform: scale(1.05);
+  background-color: #0056b3;
+  transform: translateY(-2px);
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
 }
 
-.custom-btn:focus {
-  outline: none;
-  box-shadow: 0 0 0 0.2rem rgba(36, 39, 84, 0.5);
+/* Títulos y textos */
+.title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+  letter-spacing: 1px;
 }
 
-/* Variantes con retrasos en la animación */
-.fade-in.delay-1 {
-  animation-delay: 0.5s; /* Añade un retraso de 0.5 segundos antes de iniciar la animación */
+p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.5;
 }
 
-.fade-in.delay-2 {
-  animation-delay: 1s; /* Añade un retraso de 1 segundo antes de iniciar la animación */
+/* Map container */
+.map-container {
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
 }
 
-.fade-in.delay-3 {
-  animation-delay: 1.5s; /* Añade un retraso de 1.5 segundos antes de iniciar la animación */
+/* Tarjetas de servicios */
+.service-card {
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
-.fade-in.delay-4 {
-  animation-delay: 2s; /* Añade un retraso de 2 segundos antes de iniciar la animación */
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
 }
 
-/* Estilo para cuando el campo de formulario tiene el foco */
-.form-control:focus {
-  box-shadow: 0 0 10px rgba(0, 123, 255, 0.5); /* Añade una sombra azul al campo cuando está en foco */
-  border-color: #007bff; /* Cambia el color del borde a azul */
+.service-card .card-title {
+  font-size: 1.25rem;
+  color: #007bff;
 }
 
-/* Transición suave en la etiqueta del formulario flotante */
-.form-floating label {
-  transition: all 0.3s ease; /* Aplica una transición suave a todos los cambios de la etiqueta */
+.service-card .card-text {
+  font-size: 0.9rem;
+  color: #666;
 }
 
-/* Efecto cuando el campo de formulario está en foco y la etiqueta se mueve */
-.form-floating .form-control:focus + label {
-  color: #007bff; /* Cambia el color de la etiqueta a azul cuando el campo tiene el foco */
-  transform: translateY(-1.5rem) scale(0.85); /* Mueve la etiqueta hacia arriba y la reduce de tamaño */
+/* Responsividad */
+@media (max-width: 768px) {
+  .custom-btn {
+    width: 100%;
+  }
+
+  .title {
+    font-size: 1.75rem;
+  }
+
+  p {
+    font-size: 0.95rem;
+  }
 }
 
-/* Animación de entrada para elementos con la clase .fade-in */
-.fade-in {
-  animation: fadeIn 1s ease-in-out; /* Aplica la animación fadeIn en 1 segundo con transición suave */
-}
+/* fin */
 
-/* Estilo para las imágenes que cubren toda la pantalla */
-img {
-  height: 100vh; /* La imagen ocupa toda la altura de la ventana */
-  object-fit: cover; /* Mantiene las proporciones de la imagen sin distorsionarla */
-}
 
-/* Estilo para el contenedor con la superposición de texto */
-.overlay-container {
-  position: relative; /* El contenedor tiene posición relativa para poder alinear elementos internos */
-  text-align: center; /* Centra el texto horizontalmente */
-  color: white; /* Cambia el color del texto a blanco */
-}
-
-/* Estilo para el formulario flotante centrado */
-.overlay-form {
-  position: absolute; /* Posiciona el formulario de manera absoluta dentro del contenedor */
-  top: 50%; /* Lo coloca a mitad de la altura del contenedor */
-  left: 50%; /* Lo coloca a mitad del ancho del contenedor */
-  transform: translate(-50%, -50%); /* Centra el formulario utilizando una traslación negativa */
-  background: rgba(0, 0, 0, 0.1); /* Fondo semitransparente negro */
-  padding: 20px; /* Añade espacio interno alrededor del formulario */
-  border-radius: 10px; /* Bordes redondeados */
-  width: 90%; /* El formulario ocupa el 90% del ancho del contenedor */
-  max-width: 800px; /* El formulario tiene un ancho máximo de 800px */
-}
-
-/* Estilo para formularios horizontales */
-.form-horizontal {
-  display: flex; /* Utiliza flexbox para organizar los elementos */
-  gap: 10px; /* Espacio de 10px entre los elementos */
-  align-items: center; /* Alinea los elementos en el centro verticalmente */
-  justify-content: center; /* Alinea los elementos al centro horizontalmente */
-  flex-wrap: wrap; /* Permite que los elementos se envuelvan si no caben en una línea */
-}
-
-.text-center{
-  color: #242754;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-/* Estilo para los campos de formulario dentro de un formulario horizontal */
-.form-horizontal .form-floating {
-  flex: 1; /* Los campos ocupan un espacio proporcional */
-  min-width: 150px; /* El ancho mínimo de los campos es 150px */
-}
-
-/* Estilo para los botones dentro de un formulario horizontal */
-.form-horizontal button {
-  flex: 0 0 auto; /* Los botones no crecen ni se encogen, se ajustan al tamaño de su contenido */
-}
 
 
 /*-footer--*/
