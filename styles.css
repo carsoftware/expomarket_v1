@@ -4,9 +4,15 @@
   src: url(font/LEIXO-DEMO.ttf); /* Ruta a la fuente */
 }
 
+/* leixo-dmeo pintando titulos */
+.leixo-demo{
+  color:#de702a;
+  font-family: 'leixo-demo';
+}
+
 /* Estilos generales para el cuerpo del sitio */
 body {
-  font-family: 'Segoe UI', Tahoma, sans-serif !important; /* Establece la fuente predeterminada del cuerpo */
+  font-family: Arial, Helvetica, sans-serif !important; /* Establece la fuente predeterminada del cuerpo */
   font-size: 16px; /* Tamaño base para textos */
   line-height: 1.6; /* Espaciado cómodo entre líneas */
   color: #333; /* Texto en color oscuro para buena legibilidad */
@@ -22,10 +28,24 @@ body {
   height: auto; /* Mantiene la proporción de la imagen */
 }
 
+/* Navbar (barra de navegación) */
+.navbar {
+  padding: 0.8rem 1rem; /* Espaciado en la barra de navegación */
+  z-index: 1030; /* Prioridad en el apilamiento de elementos */
+  background-color: #edf0f3 !important; /* Color de fondo de la navbar */
+}
+
+/* Estilos de menu-link */
+.nav-link{
+  font-size: 15px !important;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #1e2148;
+}
+
 /* Estilos para el buscador moderno */
 .search-form {
-  width: 90%; /* El formulario ocupa todo el ancho */
-  max-width: 600px; /* Ancho máximo */
+  width: 100%; /* El formulario ocupa todo el ancho */
+  max-width: 450px; /* Ancho máximo */
   transition: all 0.1s ease; /* Efecto de transición suave para cualquier cambio */
 }
 
@@ -40,20 +60,8 @@ body {
 
 .search-form .btn-outline-primary {
   border-radius: 0 20px 20px 0 !important; /* Bordes redondeados en el botón de búsqueda */
-}
-
-/* Navbar (barra de navegación) */
-.navbar {
-  padding: 0.8rem 1rem; /* Espaciado en la barra de navegación */
-  z-index: 1030; /* Prioridad en el apilamiento de elementos */
-  background-color: #edf0f3 !important; /* Color de fondo de la navbar */
-}
-
-/* Estilos de menu-link moblie */
-.nav-link{
-  font-size: 15px !important;
-  font-family: Arial, Helvetica, sans-serif;
-  color: #1e2148;
+  color: #de702a;
+  background-color: white;
 }
 
 /* Estilos de menu-link escritorio */
@@ -62,12 +70,6 @@ body {
   color: #242754;
   font-size: 15px !important;
 }
-
-/* leixo-dmeo */
-.leixo-demo{
-  color:#de702a;
-  font-family: 'leixo-demo';
-}
 /* Estilo para que el sub-dropdown se alinee a la derecha en pantallas grandes */
 .dropdown-submenu .dropdown-menu {
   display: none; /* Esconde el sub-dropdown por defecto */
@@ -75,19 +77,13 @@ body {
   left: 100%; /* Mueve el sub-dropdown a la derecha */
   top: 0;
   z-index: 1000; /* Asegura que el sub-dropdown esté encima de otros elementos */
+  
 }
 
 /* Muestra el sub-dropdown cuando el cursor pasa sobre el elemento principal (en pantallas grandes) */
 .dropdown-submenu:hover .dropdown-menu {
   display: block;
 }
-
-
-/* Transición para el menú lateral (offcanvas) */
-.offcanvas {
-  transition: transform 0.4s ease; /* Efecto de transición para el menú lateral */
-}
-
 /* Estilos de iconos para escritorio*/
 .icon-container {
   display: flex;
@@ -120,25 +116,29 @@ body {
   font-size: 12px; /* Tamaño ajustado para el contador */
 }
 
+/* Transición para el menú lateral (offcanvas) */
+.offcanvas {
+  transition: transform 0.4s ease; /* Efecto de transición para el menú lateral */
+}
+
+
 /* Estilos del carusel (slideshow) */
 .carousel-item img {
   height: 680px; /* Altura de las imágenes del carusel */
   object-fit: cover; /* Ajuste de la imagen para que cubra completamente el área del contenedor */
 }
 
-  /* Estilo para los botones del carrusel */
-  .carousel-buttons .btn {
-    opacity: 0.9;
-    transition: transform 0.3s ease, opacity 0.3s ease;
+/* Estilo para los botones del carrusel */
+.carousel-buttons .btn {
+  opacity: 0.9;
+  transition: transform 0.3s ease, opacity 0.3s ease;
 
-  }
+}
 
-  .carousel-buttons .btn:hover {
-    transform: scale(1.1);
-    opacity: 1;
-  }
-
-
+.carousel-buttons .btn:hover {
+  transform: scale(1.1);
+  opacity: 1;
+}
 
 /* Servicios de carusel */
 .carousel-caption {
