@@ -154,214 +154,169 @@
   </div>
   
 
-  <!-- productos -->
+  <!-- Section catalogo -->
+  <!-- Title Catalogo -->
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h2 class="title" data-aos="fade-up">MÁS VENDIDOS</h2>
+      </div>
+    </div>
+  </div>
+
+  <!-- Product Catalog -->
   <div class="container py-5">
-    <!-- Fila de productos -->
+    <!-- Product Rows -->
     <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
-        <!-- Producto 1 -->
-        <div class="col mb-4">
-            <div class="card product-card h-100">
-                <img src="img/catalogo-crudo-shirim.jpg" class="card-img-top catalog-img img-fluid" alt="Camarón crudo">
-                <div class="card-body text-center">
-                    <h5 class="card-title">Camarón Crudo</h5>
-                    <p class="card-text text-warning">★★★★☆ (4.0)</p>
-                    <p class="card-text text-success fw-bold">$65,000 / kg</p>
-                    <div class="d-flex justify-content-center align-items-center gap-2 mb-3">
-                        <button class="btn btn-outline-secondary" onclick="decreaseCount(1)">-</button>
-                        <input type="number" id="product-count-1" class="form-control text-center" value="1" min="1" style="width: 60px;">
-                        <button class="btn btn-outline-secondary" onclick="increaseCount(1)">+</button>
-                    </div>
-                    <button class="btn btn-primary btn-sm">Añadir al carrito</button>
-                </div>
+      <!-- Producto 1 -->
+      <div class="col">
+        <div class="card product-card h-100">
+          <img src="img/catalogo-crudo-shirim.jpg" class="card-img-top catalog-img img-fluid" alt="Camarón crudo">
+          <div class="card-body text-center">
+            <h5 class="card-title">Camarón Crudo</h5>
+            <p class="card-text text-warning">★★★★☆ (4.0)</p>
+            <p class="card-text text-success fw-bold">$36,000 / kg</p>
+            <div class="d-flex justify-content-center align-items-center gap-2 mb-3">
+              <button class="btn btn-outline-secondary" aria-label="Reducir cantidad de Camarón Crudo" onclick="decreaseCount(1)">-</button>
+              <input type="number" id="product-count-1" class="form-control text-center" value="1" min="1" style="width: 60px;">
+              <button class="btn btn-outline-secondary" aria-label="Aumentar cantidad de Camarón Crudo" onclick="increaseCount(1)">+</button>
             </div>
+            <button class="btn btn-primary btn-sm">Añadir al carrito</button>
+          </div>
         </div>
-        <!-- Producto 2 -->
-        <div class="col mb-4">
-            <div class="card product-card h-100">
-                <img src="img/catalogo-preco-shirim.jpg" class="card-img-top catalog-img img-fluid" alt="Camarón precocido">
-                <div class="card-body text-center">
-                    <h5 class="card-title">Camarón Precocido</h5>
-                    <p class="card-text text-warning">★★★★☆ (4.0)</p>
-                    <p class="card-text text-success fw-bold">$65,000 / kg</p>
-                    <div class="d-flex justify-content-center align-items-center gap-2 mb-3">
-                        <button class="btn btn-outline-secondary" onclick="decreaseCount(2)">-</button>
-                        <input type="number" id="product-count-2" class="form-control text-center" value="1" min="1" style="width: 60px;">
-                        <button class="btn btn-outline-secondary" onclick="increaseCount(2)">+</button>
-                    </div>
-                    <button class="btn btn-primary btn-sm">Añadir al carrito</button>
-                </div>
+      </div>
+      <!-- Producto 2 -->
+      <div class="col">
+        <div class="card product-card h-100">
+          <img src="img/catalogo-preco-shirim.jpg" class="card-img-top catalog-img img-fluid" alt="Camarón precocido">
+          <div class="card-body text-center">
+            <h5 class="card-title">Camarón Precocido</h5>
+            <p class="card-text text-warning">★★★★☆ (4.0)</p>
+            <p class="card-text text-success fw-bold">$42,000 / kg</p>
+            <div class="d-flex justify-content-center align-items-center gap-2 mb-3">
+              <button class="btn btn-outline-secondary" aria-label="Reducir cantidad de Camarón Precocido" onclick="decreaseCount(2)">-</button>
+              <input type="number" id="product-count-2" class="form-control text-center" value="1" min="1" style="width: 60px;">
+              <button class="btn btn-outline-secondary" aria-label="Aumentar cantidad de Camarón Precocido" onclick="increaseCount(2)">+</button>
             </div>
+            <button class="btn btn-primary btn-sm">Añadir al carrito</button>
+          </div>
         </div>
-        <!-- Producto 3 -->
-        <div class="col mb-4">
-            <div class="card product-card h-100">
-                <img src="img/catalogo-langostino-preco.jpg" class="card-img-top catalog-img img-fluid" alt="Langostino precocido">
-                <div class="card-body text-center">
-                    <h5 class="card-title">Langostino Precocido</h5>
-                    <p class="card-text text-warning">★★★★☆ (4.0)</p>
-                    <p class="card-text text-success fw-bold">$65,000 / kg</p>
-                    <div class="d-flex justify-content-center align-items-center gap-2 mb-3">
-                        <button class="btn btn-outline-secondary" onclick="decreaseCount(3)">-</button>
-                        <input type="number" id="product-count-3" class="form-control text-center" value="1" min="1" style="width: 60px;">
-                        <button class="btn btn-outline-secondary" onclick="increaseCount(3)">+</button>
-                    </div>
-                    <button class="btn btn-primary btn-sm">Añadir al carrito</button>
-                </div>
+      </div>
+      <!-- Producto 3 -->
+      <div class="col">
+        <div class="card product-card h-100">
+          <img src="img/catalogo-langostino-preco.jpg" class="card-img-top catalog-img img-fluid" alt="Langostino precocido">
+          <div class="card-body text-center">
+            <h5 class="card-title">Langostino Precocido Entero</h5>
+            <p class="card-text text-warning">★★★★☆ (4.0)</p>
+            <p class="card-text text-success fw-bold">$75,000 / kg</p>
+            <div class="d-flex justify-content-center align-items-center gap-2 mb-3">
+              <button class="btn btn-outline-secondary" aria-label="Reducir cantidad de Langostino Precocido" onclick="decreaseCount(3)">-</button>
+              <input type="number" id="product-count-3" class="form-control text-center" value="1" min="1" style="width: 60px;">
+              <button class="btn btn-outline-secondary" aria-label="Aumentar cantidad de Langostino Precocido" onclick="increaseCount(3)">+</button>
             </div>
+            <button class="btn btn-primary btn-sm">Añadir al carrito</button>
+          </div>
         </div>
-        <!-- Producto 4 -->
-        <div class="col mb-4">
-            <div class="card product-card h-100">
-                <img src="img/catalogo-langostino-crudo.jpg" class="card-img-top catalog-img img-fluid" alt="Langostino crudo">
-                <div class="card-body text-center">
-                    <h5 class="card-title">Langostino Crudo</h5>
-                    <p class="card-text text-warning">★★★★☆ (4.0)</p>
-                    <p class="card-text text-success fw-bold">$65,000 / kg</p>
-                    <div class="d-flex justify-content-center align-items-center gap-2 mb-3">
-                        <button class="btn btn-outline-secondary" onclick="decreaseCount(4)">-</button>
-                        <input type="number" id="product-count-4" class="form-control text-center" value="1" min="1" style="width: 60px;">
-                        <button class="btn btn-outline-secondary" onclick="increaseCount(4)">+</button>
-                    </div>
-                    <button class="btn btn-primary btn-sm">Añadir al carrito</button>
-                </div>
+      </div>
+      <!-- Producto 4 -->
+      <div class="col">
+        <div class="card product-card h-100">
+          <img src="img/catalogo-langostino-crudo.jpg" class="card-img-top catalog-img img-fluid" alt="Langostino crudo">
+          <div class="card-body text-center">
+            <h5 class="card-title">Langostino Crudo con cascara</h5>
+            <p class="card-text text-warning">★★★★☆ (4.0)</p>
+            <p class="card-text text-success fw-bold">$65,000 / kg</p>
+            <div class="d-flex justify-content-center align-items-center gap-2 mb-3">
+              <button class="btn btn-outline-secondary" aria-label="Reducir cantidad de Langostino Crudo" onclick="decreaseCount(4)">-</button>
+              <input type="number" id="product-count-4" class="form-control text-center" value="1" min="1" style="width: 60px;">
+              <button class="btn btn-outline-secondary" aria-label="Aumentar cantidad de Langostino Crudo" onclick="increaseCount(4)">+</button>
             </div>
+            <button class="btn btn-primary btn-sm">Añadir al carrito</button>
+          </div>
         </div>
-        <!-- Producto 5 -->
-        <div class="col mb-4">
-            <div class="card product-card h-100">
-                <img src="img/7.jpg" class="card-img-top catalog-img img-fluid" alt="Pescado entero">
-                <div class="card-body text-center">
-                    <h5 class="card-title">Pescados Enteros</h5>
-                    <p class="card-text text-warning">★★★★☆ (4.0)</p>
-                    <p class="card-text text-success fw-bold">$38,000 / kg</p>
-                    <div class="d-flex justify-content-center align-items-center gap-2 mb-3">
-                        <button class="btn btn-outline-secondary" onclick="decreaseCount(5)">-</button>
-                        <input type="number" id="product-count-5" class="form-control text-center" value="1" min="1" style="width: 60px;">
-                        <button class="btn btn-outline-secondary" onclick="increaseCount(5)">+</button>
-                    </div>
-                    <button class="btn btn-primary btn-sm">Añadir al carrito</button>
-                </div>
+      </div>
+
+
+      <!-- Producto 5 -->
+      <div class="col">
+        <div class="card product-card h-100">
+          <img src="img/filetes.jpg" class="card-img-top catalog-img img-fluid" alt="Langostino crudo">
+          <div class="card-body text-center">
+            <h5 class="card-title">Filetes</h5>
+            <p class="card-text text-warning">★★★★☆ (4.0)</p>
+            <p class="card-text text-success fw-bold">$21.000 / kg</p>
+            <div class="d-flex justify-content-center align-items-center gap-2 mb-3">
+              <button class="btn btn-outline-secondary" aria-label="Reducir cantidad de Langostino Crudo" onclick="decreaseCount(4)">-</button>
+              <input type="number" id="product-count-4" class="form-control text-center" value="1" min="1" style="width: 60px;">
+              <button class="btn btn-outline-secondary" aria-label="Aumentar cantidad de Langostino Crudo" onclick="increaseCount(4)">+</button>
             </div>
+            <button class="btn btn-primary btn-sm">Añadir al carrito</button>
+          </div>
         </div>
-        <!-- Producto 6 -->
-        <div class="col mb-4">
-            <div class="card product-card h-100">
-                <img src="img/filetes1.jpg" class="card-img-top catalog-img img-fluid" alt="Corvina">
-                <div class="card-body text-center">
-                    <h5 class="card-title">Corvina</h5>
-                    <p class="card-text text-warning">★★★★☆ (4.0)</p>
-                    <p class="card-text text-success fw-bold">$55,000 / kg</p>
-                    <div class="d-flex justify-content-center align-items-center gap-2 mb-3">
-                        <button class="btn btn-outline-secondary" onclick="decreaseCount(6)">-</button>
-                        <input type="number" id="product-count-6" class="form-control text-center" value="1" min="1" style="width: 60px;">
-                        <button class="btn btn-outline-secondary" onclick="increaseCount(6)">+</button>
-                    </div>
-                    <button class="btn btn-primary btn-sm">Añadir al carrito</button>
-                </div>
+      </div>
+
+
+
+      <!-- Producto 6-->
+      <div class="col">
+        <div class="card product-card h-100">
+          <img src="img/mojarra.jpg" class="card-img-top catalog-img img-fluid" alt="Langostino crudo">
+          <div class="card-body text-center">
+            <h5 class="card-title">Enteros</h5>
+            <p class="card-text text-warning">★★★★☆ (4.0)</p>
+            <p class="card-text text-success fw-bold">$20,000 / kg</p>
+            <div class="d-flex justify-content-center align-items-center gap-2 mb-3">
+              <button class="btn btn-outline-secondary" aria-label="Reducir cantidad de Langostino Crudo" onclick="decreaseCount(4)">-</button>
+              <input type="number" id="product-count-4" class="form-control text-center" value="1" min="1" style="width: 60px;">
+              <button class="btn btn-outline-secondary" aria-label="Aumentar cantidad de Langostino Crudo" onclick="increaseCount(4)">+</button>
             </div>
+            <button class="btn btn-primary btn-sm">Añadir al carrito</button>
+          </div>
         </div>
-        <!-- Producto 7 -->
-        <div class="col mb-4">
-            <div class="card product-card h-100">
-                <img src="img/molusco.jpg" class="card-img-top catalog-img img-fluid" alt="Corvina">
-                <div class="card-body text-center">
-                    <h5 class="card-title">Anillos de calamar illex</h5>
-                    <p class="card-text text-warning">★★★★☆ (4.0)</p>
-                    <p class="card-text text-success fw-bold">$55,000 / kg</p>
-                    <div class="d-flex justify-content-center align-items-center gap-2 mb-3">
-                        <button class="btn btn-outline-secondary" onclick="decreaseCount(6)">-</button>
-                        <input type="number" id="product-count-6" class="form-control text-center" value="1" min="1" style="width: 60px;">
-                        <button class="btn btn-outline-secondary" onclick="increaseCount(6)">+</button>
-                    </div>
-                    <button class="btn btn-primary btn-sm">Añadir al carrito</button>
-                </div>
+      </div>
+
+
+
+
+      <!-- Producto 7-->
+      <div class="col">
+        <div class="card product-card h-100">
+          <img src="img/catalogo-salmon.jpg" class="card-img-top catalog-img img-fluid" alt="Langostino crudo">
+          <div class="card-body text-center">
+            <h5 class="card-title">En porción</h5>
+            <p class="card-text text-warning">★★★★☆ (4.0)</p>
+            <p class="card-text text-success fw-bold">$64,000 / kg</p>
+            <div class="d-flex justify-content-center align-items-center gap-2 mb-3">
+              <button class="btn btn-outline-secondary" aria-label="Reducir cantidad de Langostino Crudo" onclick="decreaseCount(4)">-</button>
+              <input type="number" id="product-count-4" class="form-control text-center" value="1" min="1" style="width: 60px;">
+              <button class="btn btn-outline-secondary" aria-label="Aumentar cantidad de Langostino Crudo" onclick="increaseCount(4)">+</button>
             </div>
+            <button class="btn btn-primary btn-sm">Añadir al carrito</button>
+          </div>
         </div>
-        <!-- Producto 8 -->
-        <div class="col mb-4">
-            <div class="card product-card h-100">
-                <img src="img/filetes.jpg" class="card-img-top catalog-img img-fluid" alt="Corvina">
-                <div class="card-body text-center">
-                    <h5 class="card-title">Filete de Tilapia</h5>
-                    <p class="card-text text-warning">★★★★☆ (4.0)</p>
-                    <p class="card-text text-success fw-bold">$55,000 / kg</p>
-                    <div class="d-flex justify-content-center align-items-center gap-2 mb-3">
-                        <button class="btn btn-outline-secondary" onclick="decreaseCount(6)">-</button>
-                        <input type="number" id="product-count-6" class="form-control text-center" value="1" min="1" style="width: 60px;">
-                        <button class="btn btn-outline-secondary" onclick="increaseCount(6)">+</button>
-                    </div>
-                    <button class="btn btn-primary btn-sm">Añadir al carrito</button>
-                </div>
+      </div>
+
+
+
+      <!-- Producto 8 -->
+      <div class="col">
+        <div class="card product-card h-100">
+          <img src="img/surimi-colum-2.jpg" class="card-img-top catalog-img img-fluid" alt="Langostino crudo">
+          <div class="card-body text-center">
+            <h5 class="card-title">Surimi Entero</h5>
+            <p class="card-text text-warning">★★★★☆ (4.0)</p>
+            <p class="card-text text-success fw-bold">$9.000 /  Pqte</p>
+            <div class="d-flex justify-content-center align-items-center gap-2 mb-3">
+              <button class="btn btn-outline-secondary" aria-label="Reducir cantidad de Langostino Crudo" onclick="decreaseCount(4)">-</button>
+              <input type="number" id="product-count-4" class="form-control text-center" value="1" min="1" style="width: 60px;">
+              <button class="btn btn-outline-secondary" aria-label="Aumentar cantidad de Langostino Crudo" onclick="increaseCount(4)">+</button>
             </div>
+            <button class="btn btn-primary btn-sm">Añadir al carrito</button>
+          </div>
         </div>
-        <!-- Producto 9 -->
-        <div class="col mb-4">
-            <div class="card product-card h-100">
-                <img src="img/news-bg-6.jpg" class="card-img-top catalog-img img-fluid" alt="Corvina">
-                <div class="card-body text-center">
-                    <h5 class="card-title">Mixtura de Mariscos</h5>
-                    <p class="card-text text-warning">★★★★☆ (4.0)</p>
-                    <p class="card-text text-success fw-bold">$55,000 / kg</p>
-                    <div class="d-flex justify-content-center align-items-center gap-2 mb-3">
-                        <button class="btn btn-outline-secondary" onclick="decreaseCount(6)">-</button>
-                        <input type="number" id="product-count-6" class="form-control text-center" value="1" min="1" style="width: 60px;">
-                        <button class="btn btn-outline-secondary" onclick="increaseCount(6)">+</button>
-                    </div>
-                    <button class="btn btn-primary btn-sm">Añadir al carrito</button>
-                </div>
-            </div>
-        </div>
-        <!-- Producto 10-->
-        <div class="col mb-4">
-            <div class="card product-card h-100">
-                <img src="img/16.jpg" class="card-img-top catalog-img img-fluid" alt="Surimi entero">
-                <div class="card-body text-center">
-                    <h5 class="card-title">Surimi Entero</h5>
-                    <p class="card-text text-warning">★★★★☆ (4.0)</p>
-                    <p class="card-text text-success fw-bold">$9,000 / paquete</p>
-                    <div class="d-flex justify-content-center align-items-center gap-2 mb-3">
-                        <button class="btn btn-outline-secondary" onclick="decreaseCount(7)">-</button>
-                        <input type="number" id="product-count-7" class="form-control text-center" value="1" min="1" style="width: 60px;">
-                        <button class="btn btn-outline-secondary" onclick="increaseCount(7)">+</button>
-                    </div>
-                    <button class="btn btn-primary btn-sm">Añadir al carrito</button>
-                </div>
-            </div>
-        </div>
-        <!-- Producto 11-->
-        <div class="col mb-4">
-            <div class="card product-card h-100">
-                <img src="img/sect-prod-4.jpg" class="card-img-top catalog-img img-fluid" alt="Bagre Basa entero">
-                <div class="card-body text-center">
-                    <h5 class="card-title">Bagre Basa Entero</h5>
-                    <p class="card-text text-warning">★★★★☆ (4.0)</p>
-                    <p class="card-text text-success fw-bold">$11,000 / kg</p>
-                    <div class="d-flex justify-content-center align-items-center gap-2 mb-3">
-                        <button class="btn btn-outline-secondary" onclick="decreaseCount(8)">-</button>
-                        <input type="number" id="product-count-8" class="form-control text-center" value="1" min="1" style="width: 60px;">
-                        <button class="btn btn-outline-secondary" onclick="increaseCount(8)">+</button>
-                    </div>
-                    <button class="btn btn-primary btn-sm">Añadir al carrito</button>
-                </div>
-            </div>
-        </div>
-        <!-- Producto 12 -->
-        <div class="col mb-4">
-            <div class="card product-card h-100">
-                <img src="img/catalogo-salmon.jpg" class="card-img-top catalog-img img-fluid" alt="Corvina">
-                <div class="card-body text-center">
-                    <h5 class="card-title">Salmòn en Porciòn</h5>
-                    <p class="card-text text-warning">★★★★☆ (4.0)</p>
-                    <p class="card-text text-success fw-bold">$64,000 / kg</p>
-                    <div class="d-flex justify-content-center align-items-center gap-2 mb-3">
-                        <button class="btn btn-outline-secondary" onclick="decreaseCount(6)">-</button>
-                        <input type="number" id="product-count-6" class="form-control text-center" value="1" min="1" style="width: 60px;">
-                        <button class="btn btn-outline-secondary" onclick="increaseCount(6)">+</button>
-                    </div>
-                    <button class="btn btn-primary btn-sm">Añadir al carrito</button>
-                </div>
-            </div>
-        </div>
+      </div>
+      <!-- Más productos seguirían aquí -->
     </div>
   </div>
  

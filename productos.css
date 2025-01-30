@@ -3,176 +3,112 @@
   src: url(font/LEIXO-DEMO.ttf); /* Ruta a la fuente */
 }
 
-.card{
-  margin-top: 60px;
+/* catalogo */
+
+
+
+
+/* encustas */
+.faq-section {
+  padding: 50px 20px;
+  background-color: #fff;
+  text-align: center;
 }
-  .offcanvas-title {
-    font-family: 'leixo-demo' !important;
-    color: #242754;
-  }
 
-  .testimonials-section {
-    padding: 50px 20px;
-    background-color: #f1f1f1;
-    text-align: center;
-  }
+.faq-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
 
-  .testimonials-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-  }
+.faq-item {
+  margin-bottom: 20px;
+  text-align: left;
+}
 
-  .testimonial {
-    background: #fff;
-    border-radius: 10px;
-    padding: 20px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    width: 300px;
-    text-align: left;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    position: relative;
-  }
+.faq-item h3 {
+  font-size: 1.2rem;
+  color: #333;
+  cursor: pointer;
+  position: relative;
+}
 
-  .testimonial img {
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    object-fit: cover;
-    position: absolute;
-    top: -30px;
-    left: 20px;
-    border: 3px solid #fff;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
-  }
+.faq-item h3::after {
+  content: '\25BC';
+  position: absolute;
+  right: 0;
+  transition: transform 0.3s ease;
+}
 
-  .testimonial:hover {
-    transform: scale(1.05);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-  }
+.faq-item h3.active::after {
+  transform: rotate(180deg);
+}
 
-  .testimonial:hover img {
-    transform: scale(1.1);
-  }
+.faq-item p {
+  margin-top: 5px;
+  font-size: 1rem;
+  color: #666;
+  display: none;
+  transition: opacity 0.3s ease;
+}
 
-  .quote {
-    font-size: 1rem;
-    font-style: italic;
-    color: #555;
-    margin-top: 40px;
-  }
+.faq-item p.active {
+  display: block;
+  opacity: 1;
+}
 
 
+/*ofertas*/
+.special-offers {
+  background-color: #f1f1f1;
+  padding: 50px 20px;
+}
 
-  .author {
-    margin-top: 10px;
-    font-size: 0.9rem;
-    font-weight: bold;
-    color: #333;
-  }
+.special-offers h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #333;
+}
 
-  .faq-section {
-    padding: 50px 20px;
-    background-color: #fff;
-    text-align: center;
-  }
+.offer-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
 
-  .faq-container {
-    max-width: 800px;
-    margin: 0 auto;
-  }
+.offer-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
 
-  .faq-item {
-    margin-bottom: 20px;
-    text-align: left;
-  }
+.offer-image {
+  max-height: 200px;
+  object-fit: cover;
+}
 
-  .faq-item h3 {
-    font-size: 1.2rem;
-    color: #333;
-    cursor: pointer;
-    position: relative;
-  }
+.countdown {
+  font-size: 1.2rem;
+  color: #e74c3c;
+  font-weight: bold;
+}
 
-  .faq-item h3::after {
-    content: '\25BC';
-    position: absolute;
-    right: 0;
-    transition: transform 0.3s ease;
-  }
+.gallery-section {
+  padding: 50px 20px;
+  background-color: #fff;
+}
 
-  .faq-item h3.active::after {
-    transform: rotate(180deg);
-  }
+.gallery-section h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #333;
+}
 
-  .faq-item p {
-    margin-top: 5px;
-    font-size: 1rem;
-    color: #666;
-    display: none;
-    transition: opacity 0.3s ease;
-  }
+.carousel-inner img {
+  max-height: 400px;
+  object-fit: cover;
+}
 
-  .faq-item p.active {
-    display: block;
-    opacity: 1;
-  }
-
-
- /*ofertas*/
-  .special-offers {
-    background-color: #f1f1f1;
-    padding: 50px 20px;
-  }
-
-  .special-offers h2 {
-    text-align: center;
-    margin-bottom: 30px;
-    color: #333;
-  }
-
-  .offer-card {
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-
-  .offer-card:hover {
-    transform: scale(1.05);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-  }
-
-  .offer-image {
-    max-height: 200px;
-    object-fit: cover;
-  }
-
-  .countdown {
-    font-size: 1.2rem;
-    color: #e74c3c;
-    font-weight: bold;
-  }
-
-  .gallery-section {
-    padding: 50px 20px;
-    background-color: #fff;
-  }
-
-  .gallery-section h2 {
-    text-align: center;
-    margin-bottom: 30px;
-    color: #333;
-  }
-
-  .carousel-inner img {
-    max-height: 400px;
-    object-fit: cover;
-  }
-
-  .carousel-caption {
-    background: rgba(0, 0, 0, 0.6);
-    padding: 10px;
-    border-radius: 10px;
-  }
+.carousel-caption {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 10px;
+  border-radius: 10px;
+}
 
   
