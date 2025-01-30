@@ -184,7 +184,7 @@ body {
 
 /* Estilos título CATEGORÍAS Y CATÁLOGO */
 .title {
-  margin-top: 15vh; /* Para posicionar el título en el centro visible */
+  margin-top: 8vh; /* Para posicionar el título en el centro visible */
   text-align: center;
   font-family: 'leixo-demo';
   color:#242754;
@@ -583,6 +583,7 @@ img.rounded {
 img.rounded:hover {
   transform: scale(1.1); /* Al pasar el cursor, aumenta el tamaño de la imagen al 110% */
 }
+
 
 
 /* Estilos para pantallas pequeñas (máximo 768px) */
