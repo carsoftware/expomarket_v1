@@ -307,7 +307,7 @@ body {
 }
 
 .card-img-top {
-  max-height: 190px; /* Establece la altura máxima de la imagen */
+  max-height: 280px; /* Establece la altura máxima de la imagen */
   object-fit: cover; /* Asegura que la imagen se recorte de manera adecuada */
   border-bottom: 1px solid #eee; /* Añade una línea inferior */
 }

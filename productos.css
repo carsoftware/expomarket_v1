@@ -5,7 +5,15 @@
 
 /* catalogo */
 
+.card-img-top {
+  margin-top: 150px;
+}
 
+.card-img-top {
+  max-height: 240px; /* Establece la altura máxima de la imagen */
+  object-fit: cover; /* Asegura que la imagen se recorte de manera adecuada */
+  border-bottom: 1px solid #eee; /* Añade una línea inferior */
+}
 
 
 /* encustas */
