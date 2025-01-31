@@ -141,14 +141,19 @@ body {
 }
 
 /* Servicios de carusel */
-.carousel-caption {
+
+.servi-text{
+  color: white;
+}
+
+.carousel-caption  {
   position: absolute; /* Posición absoluta para la leyenda */
   bottom: 0px; /* Colocada en la parte inferior del contenedor */
   left: 0; /* Alineada a la izquierda */
   right: 0; /* Alineada a la derecha */
   background-color: #242754; /* Color de fondo de la leyenda */
   padding: 20px; /* Espaciado interno */
-  color: #fff; /* Color de texto */
+  color: white; /* Color de texto */
   border-radius: 10px; /* Bordes redondeados */
 }
 
@@ -186,7 +191,7 @@ body {
 .title {
   margin-top: 8vh; /* Para posicionar el título en el centro visible */
   text-align: center;
-  font-family: 'leixo-demo';
+  font-family: 'LEIXO-DEMO';
   color:#242754;
   opacity: 1; /* Evita que sobrescriba las transiciones de AOS */
 }
@@ -315,7 +320,7 @@ body {
 .card-title {
   font-size: 1.25rem; /* Establece el tamaño del título de la tarjeta */
   font-weight: bold; /* Aplica negrita al título */
-  color: #242754 !important; /* Establece el color del texto */
+  color: #242754; /* Establece el color del texto */
 }
 
 .btn {
@@ -349,13 +354,10 @@ input[type="number"] {
 /* Asegurar tamaño uniforme de imágenes */
 .catalog-img {
   height: auto; /* Ajusta el valor según tus necesidades */
-  object-fit: cover; /* Mantener proporciones recortando el exceso */
+  object-fit: cover !important; /* Mantener proporciones recortando el exceso */
   width: 100%; /* Se adapta al contenedor */
 }
 
-.fw-bold {
-  color: #de702a;
-}
 
 /* Formulario de registro */
 
