@@ -7,11 +7,16 @@
 
 .pagination {
   justify-content: flex-end;
-  margin-top: 100px;
+  margin-top: 10px;
+  margin-right: 150px;
 }
 .row{
   margin-top: 100px!important;
   margin-left: 100px!important;
+}
+.page-item{
+  justify-content: flex-end;
+  margin-top: 100px;
 }
 
 
@@ -99,13 +104,10 @@
 @media (max-width: 768px) {
   .card{
     margin-top: 150px;
-    
   }
-  
   .card-img-top {
     margin-top: 100px;
-  }
-  
+  }  
   .card-img-top {
     max-height: 260px; /* Establece la altura máxima de la imagen */
     object-fit: cover; /* Asegura que la imagen se recorte de manera adecuada */
@@ -114,6 +116,10 @@
   .pagination{
     margin-top: 180px;
     color: #242754!important;
+  }
+  .page-item{
+    justify-content: flex-end;
+    margin-top: 50px;
   }
   .row{
     margin-top: 140px!important;
