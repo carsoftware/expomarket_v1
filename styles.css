@@ -399,6 +399,7 @@ h5.offcanvas-title {
 
 .custom-button:hover {
   color: #0056b3; /* Al pasar el cursor, cambia el color del texto */
+  text-decoration: none !important;
 }
 
 .custom-button::after {
@@ -475,65 +476,6 @@ h5.offcanvas-title {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-  
-/*-map--*/
-/* Clase para aplicar la animación de desvanecimiento */
-
-/* codigo nuevo */
-/* Botones personalizados */
-.custom-btn {
-  background-color: #007bff;
-  color: white;
-  border: none;
-  transition: all 0.3s ease-in-out;
-}
-
-.custom-btn:hover {
-  background-color: #0056b3;
-  transform: translateY(-2px);
-  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
-}
-
-/* Títulos y textos */
-.title {
-  font-size: 2rem;
-  font-weight: bold;
-  color: #333;
-  letter-spacing: 1px;
-}
-
-p {
-  font-size: 1rem;
-  color: #555;
-  line-height: 1.5;
-}
-
-/* Map container */
-.map-container {
-  border-radius: 12px;
-  overflow: hidden;
-  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
-}
-
-/* Tarjetas de servicios */
-.service-card {
-  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-}
-
-.service-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
-}
-
-.service-card .card-title {
-  font-size: 1.25rem;
-  color: #007bff;
-}
-
-.service-card .card-text {
-  font-size: 0.9rem;
-  color: #666;
-}
 
 /* Responsividad */
 @media (max-width: 768px) {
@@ -939,4 +881,26 @@ to { opacity: 1; transform: translateY(0); } /* Termina visible y en su posició
   }
 }
 
+}
+
+
+
+/* Tarjetas de servicios */
+.service-card {
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.service-card .card-title {
+  font-size: 1.25rem;
+  color: #007bff;
+}
+
+.service-card .card-text {
+  font-size: 0.9rem;
+  color: #666;
 }
