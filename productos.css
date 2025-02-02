@@ -3,8 +3,16 @@
   src: url(font/LEIXO-DEMO.ttf); /* Ruta a la fuente */
 }
 
-/* catalogo */
+/* catalogo-productos */
 
+.pagination {
+  justify-content: flex-end;
+  margin-top: 100px;
+}
+.row{
+  margin-top: 100px!important;
+  margin-left: 100px!important;
+}
 
 
 /* encustas */
@@ -84,35 +92,13 @@
 
 .countdown {
   font-size: 1.2rem;
-  color: #e74c3c;
+  color:#0aaed4;
   font-weight: bold;
-}
-
-.gallery-section {
-  padding: 50px 20px;
-  background-color: #fff;
-}
-
-.gallery-section h2 {
-  text-align: center;
-  margin-bottom: 30px;
-  color: #333;
-}
-
-.carousel-inner img {
-  max-height: 400px;
-  object-fit: cover;
-}
-
-.carousel-caption {
-  background: rgba(0, 0, 0, 0.6);
-  padding: 10px;
-  border-radius: 10px;
 }
 
 @media (max-width: 768px) {
   .card{
-    margin-top: 140px;
+    margin-top: 150px;
     
   }
   
@@ -124,6 +110,19 @@
     max-height: 260px; /* Establece la altura máxima de la imagen */
     object-fit: cover; /* Asegura que la imagen se recorte de manera adecuada */
     border-bottom: 1px solid #eee; /* Añade una línea inferior */
+  }
+  .pagination{
+    margin-top: 180px;
+    color: #242754!important;
+  }
+  .row{
+    margin-top: 140px!important;
+    margin-left: 2px !important;
+  }
+  .offer-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-top: -80px;
+    margin-bottom: 100px;
   }
 }
 
