@@ -167,86 +167,8 @@
     </ul>
   </nav>
   
-  <script>
-    const products = [
-      { name: "Camarón Crudo", price: 36000, img: "img/banner.jpg" },
-      { name: "Camarón Precocido", price: 42000, img: "img/news-bg-3.jpg" },
-      { name: "Langostino Crudo Entero", price: 65000, img: "img/produc-langostino.jpg" },
-      { name: "Langostino Precocido", price: 75000, img: "img/produc-langostino-pre.jpg" },
-      { name: "Filete de Tilapia", price: 21000, img: "img/filetes.jpg" },
-      { name: "Salmón Porción Filete", price: 64000, img: "img/catalogo-salmon.jpg" },
-      { name: "Mojarra", price: 19500, img: "img/mojarra.jpg" },
-      { name: "Pargo Rojo", price: 38000, img: "img/7.jpg" },
-      { name: "Surimi Entero", price: 9000, img: "img/16.jpg" },
-      { name: "Anillos Illex", price: 20000, img: "img/anillos-illex.png" },
-      { name: "Mixtura", price: 18000, img: "img/news-bg-6.jpg" },
-      { name: "Bagre Basa Entero", price: 11000, img: "img/sect-prod-4.jpg" },
-    ];
   
-    const productsPerPage = 4;
-    let currentPage = 1;
-  
-    function displayProducts() {
-      const productContainer = document.getElementById("product-container");
-      productContainer.innerHTML = "";
       
-      const start = (currentPage - 1) * productsPerPage;
-      const end = start + productsPerPage;
-      const productsToShow = products.slice(start, end);
-  
-      productsToShow.forEach((product) => {
-        productContainer.innerHTML += `
-          <div class="col">
-            <div class="card product-card h-100">
-              <img src="${product.img}" class="card-img-top catalog-img img-fluid" alt="${product.name}">
-              <div class="card-body text-center">
-                <h5 class="card-title">${product.name}</h5>
-                <p class="card-text text-success fw-bold">$${product.price.toLocaleString()} / kg</p>
-                <button class="btn btn-primary btn-sm">Añadir al carrito</button>
-              </div>
-            </div>
-          </div>
-        `;
-      });
-    }
-  
-    function setupPagination() {
-      const pagination = document.getElementById("pagination");
-      pagination.innerHTML = "";
-  
-      const totalPages = Math.ceil(products.length / productsPerPage);
-      
-      for (let i = 1; i <= totalPages; i++) {
-        pagination.innerHTML += `
-          <li class="page-item ${i === currentPage ? "active" : ""}">
-            <button class="page-link" onclick="changePage(${i})">${i}</button>
-          </li>
-        `;
-      }
-    }
-  
-    function changePage(page) {
-      currentPage = page;
-      displayProducts();
-      setupPagination();
-    }
-  
-    displayProducts();
-    setupPagination();
-  </script>
-  
-
-  <script>
-    function goToTop(page) {
-      // Lógica de la paginación aquí (por ejemplo, cargar más productos)
-      
-      // Desplazar la página hacia el inicio
-      window.scrollTo(0, 0); 
-    }
-  </script>
-
- 
-    
 
   <!--encuestas-->
   <section class="faq-section">
@@ -282,14 +204,13 @@
 
   <!--ofertas especiales-->
   <section class="special-offers">
-    <h4 class="mb-3 fade-in">Pr<span class="leixo-demo">o</span>duct<span class="leixo-demo">o</span>s en <span class="leixo-demo">o</span>ferta</h4>
     <div class="container">
       <div class="row row-cols-1 row-cols-md-3 g-4">
         <div class="col">
           <div class="card offer-card">
-            <img src="img/shirim2.jpg" class="card-img-top offer-image" alt="Oferta 1">
+            <img src="img/camaron-cr-pdf.jpg" class="card-img-top offer-image" alt="Oferta 1">
             <div class="card-body">
-              <h5 class="card-title">Producto en Oferta Camarón Precocido</h5>
+              <h5 class="card-title">Producto en Oferta Camarón Crudo</h5>
               <p class="card-text">Aprovecha este descuento único.</p>
               <p class="countdown">Oferta termina en: 02:14:36</p>
               <a href="#" class="btn btn-primary">Comprar Ahora</a>
@@ -328,7 +249,7 @@
   <div class="container py-5">
     <div class="row align-items-center">
         <div class="col-md-6">
-            <img src="img/16.jpg" alt="Imagen de fondo" class="img-fluid rounded-3 scrollreveal">
+            <img src="img/crudo1.jpg" alt="Imagen de fondo" class="img-fluid rounded-3 scrollreveal">
             <div class="mt-4">
                 <h5 class="text-center scrollreveal "><span class="leixo-demo">D</span>escubre más</h5>
                 <p class="text-center scrollreveal">Suscríbete para recibir las últimas noticias y promociones.</p>
@@ -361,6 +282,24 @@
         </div>
     </div>
   </div>
+
+  <!-- maps -->
+  <section class="my-5">
+    <div class="container-fluid px-0">
+      <div class="row g-0">
+        <!-- Google Map -->
+        <div class="col-12">
+          <div class="map-container position-relative overflow-hidden rounded shadow-lg">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3982.6867579913987!2d-76.52493452526839!3d3.426242696548285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e30a745fc123575%3A0xb530d3a7c2da6edc!2sEXPOMAR!5e0!3m2!1ses!2sco!4v1736521896220!5m2!1ses!2sco"
+              width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy"
+              class="animate__animated animate__fadeInLeft"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
 
   <footer class="bg-light text-dark py-5">
@@ -465,37 +404,6 @@
 
 
 
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
   <!-- Bootstrap JS Bundle -->
@@ -515,6 +423,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   <script src="js/title.js"></script>
   <script src="js/products.js"></script>
+  <script src="js/pagina-productos.js"></script>
 </body>
 </html>
 
