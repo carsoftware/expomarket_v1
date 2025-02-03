@@ -1,4 +1,3 @@
-
 const products = [
     { name: "Camarón Crudo", price: 36000, img: "img/banner.jpg" },
     { name: "Camarón Precocido", price: 42000, img: "img/news-bg-3.jpg" },
@@ -60,6 +59,9 @@ function changePage(page) {
     currentPage = page;
     displayProducts();
     setupPagination();
+
+
+    window.scrollTo({ top: 0, behavior: "smooth" });
 }
 
 displayProducts();
