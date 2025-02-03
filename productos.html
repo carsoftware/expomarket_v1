@@ -154,253 +154,131 @@
   </div>
   
 
-  <!-- Product Catalog -->
-  <div id="product-container" class="container row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4"></div>
+ <!-- Product Catalog -->
+<div id="product-container" class="container row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4"></div>
 
-  <!-- Controles de paginación -->
-  <nav aria-label="Page navigation">
-    <ul class="pagination justify-content-end" id="pagination">
-      <li class="page-item"><a class="page-link" href="#" onclick="goToTop(1)">1</a></li>
-      <li class="page-item"><a class="page-link" href="#" onclick="goToTop(2)">2</a></li>
-      <li class="page-item"><a class="page-link" href="#" onclick="goToTop(3)">3</a></li>
-      <li class="page-item"><a class="page-link" href="#" onclick="goToTop(4)">4</a></li>
-    </ul>
-  </nav>
-  
-  
-      
+<!-- Controles de paginación -->
+<nav aria-label="Page navigation" class="mt-4">
+  <ul class="pagination justify-content-center" id="pagination"></ul>
+</nav>
 
-  <!--encuestas-->
-  <section class="faq-section">
-    <h2 class="text-center mb-4 offcanvas-title ">PRE<span class="leixo-demo">G</span>UNTAS   FRE<span class="leixo-demo">C</span>UENTES</h2>
-    <div class="faq-container">
-      <div class="faq-item">
-        <h3>¿Qué garantía tienen los productos?</h3>
-        <p>HACCP (Análisis de Peligros y Puntos Críticos de Control, por sus siglas en inglés) es un sistema de gestión que garantiza la seguridad
-          alimentaria mediante la identificación, evaluación y control de los peligros físicos, químicos y biológicos en cada etapa de la cadena de 
-          producción, desde la recepción de materias primas hasta el consumo final.
-          Esta certificación asegura que los productos se elaboran bajo estándares estrictos de higiene y seguridad, brindando confianza al consumidor 
-          y cumpliendo con regulaciones internacionales. Es especialmente importante en la industria alimentaria para prevenir riesgos y mantener la calidad de los productos.
-        </p>
-      </div>
-      <div class="faq-item">
-        <h3>¿Hacen envíos internacionales?</h3>
-        <p>"¡Claro! Realizamos envíos tanto a nivel nacional como internacional. Dentro del país, garantizamos entregas rápidas y seguras, adaptándonos a tus necesidades con
-           distintas opciones de envío. Para envíos internacionales, contamos con aliados logísticos confiables que nos permiten entregar nuestros productos en diversos destinos 
-           del mundo, siempre asegurándonos de que 
-          lleguen en perfectas condiciones. Si necesitas más información sobre costos o tiempos de entrega según tu ubicación, no dudes en contactarnos. ¡Estamos aquí para ayudarte!"</p>
-      </div>
-      <div class="faq-item">
-        <h3>¿Puedo devolver un producto si no estoy satisfecho?</h3>
-        <p>Entendemos lo importante que es para ti recibir un producto que cumpla con tus estándares. Sin embargo, debido a la naturaleza perecedera de los productos del mar y congelados, 
-          no podemos aceptar devoluciones, ya que esto comprometería la seguridad alimentaria y la frescura del producto.
-          Queremos asegurarnos de que estés completamente satisfecho, por lo que nos gustaría ofrecerte una solución alternativa. Por favor, contáctanos directamente para analizar tu 
-          caso y buscar una manera de compensar cualquier inconveniente. Agradecemos tu comprensión y estamos comprometidos a mejorar continuamente.
-        </p>
-      </div>
-    </div>
-  </section>
-
-
-  <!--ofertas especiales-->
-  <section class="special-offers">
-    <div class="container">
-      <div class="row row-cols-1 row-cols-md-3 g-4">
-        <div class="col">
-          <div class="card offer-card">
-            <img src="img/camaron-cr-pdf.jpg" class="card-img-top offer-image" alt="Oferta 1">
-            <div class="card-body">
-              <h5 class="card-title">Producto en Oferta Camarón Crudo</h5>
-              <p class="card-text">Aprovecha este descuento único.</p>
-              <p class="countdown">Oferta termina en: 02:14:36</p>
-              <a href="#" class="btn btn-primary">Comprar Ahora</a>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card offer-card">
-            <img src="img/sect-prod-4.jpg" class="card-img-top offer-image" alt="Oferta 2">
-            <div class="card-body">
-              <h5 class="card-title">Producto en Oferta Bagre en postas</h5>
-              <p class="card-text">Descuento limitado por tiempo.</p>
-              <p class="countdown">Oferta termina en: 04:23:15</p>
-              <a href="#" class="btn btn-primary">Comprar Ahora</a>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card offer-card">
-            <img src="img/news-bg-6.jpg" class="card-img-top offer-image" alt="Oferta 3">
-            <div class="card-body">
-              <h5 class="card-title">Producto en Oferta Mix</h5>
-              <p class="card-text">Últimas unidades disponibles.</p>
-              <p class="countdown">Oferta termina en: 01:45:00</p>
-              <a href="#" class="btn btn-primary">Comprar Ahora</a>
-            </div>
-          </div>
+<!-- Preguntas Frecuentes -->
+<section class="faq-section container my-5">
+  <h2 class="text-center mb-4">PREGUNTAS FRECUENTES</h2>
+  <div class="accordion" id="faqAccordion">
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+          ¿Qué garantía tienen los productos?
+        </button>
+      </h2>
+      <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+        <div class="accordion-body">
+          HACCP garantiza la seguridad alimentaria mediante estándares estrictos de higiene y calidad.
         </div>
       </div>
     </div>
-  </section>
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+          ¿Hacen envíos internacionales?
+        </button>
+      </h2>
+      <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+        <div class="accordion-body">
+          Sí, realizamos envíos nacionales e internacionales con aliados logísticos confiables.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Ofertas Especiales -->
+<section class="special-offers container my-5">
+  <h2 class="text-center mb-4">OFERTAS ESPECIALES</h2>
+  <div class="row row-cols-1 row-cols-md-3 g-4">
+    <div class="col">
+      <div class="card offer-card">
+        <img src="img/banner-preco.jpg" class="card-img-top offer-image" alt="Oferta 1">
+        <div class="card-body">
+          <h5 class="card-title">Producto en Oferta 1</h5>
+          <p class="card-text">Aprovecha este descuento único.</p>
+          <a href="#" class="btn btn-primary">Comprar Ahora</a>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card offer-card">
+        <img src="img/news-bg-6.jpg" class="card-img-top offer-image" alt="Oferta 2">
+        <div class="card-body">
+          <h5 class="card-title">Producto en Oferta 2</h5>
+          <p class="card-text">Descuento limitado por tiempo.</p>
+          <a href="#" class="btn btn-primary">Comprar Ahora</a>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card offer-card">
+        <img src="img/sect-prod-4.jpg" class="card-img-top offer-image" alt="Oferta 3">
+        <div class="card-body">
+          <h5 class="card-title">Producto en Oferta 3</h5>
+          <p class="card-text">Últimas unidades disponibles.</p>
+          <a href="#" class="btn btn-primary">Comprar Ahora</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
 
-  
-  <!-- fomulario -->
-  <div class="container py-5">
-    <div class="row align-items-center">
-        <div class="col-md-6">
-            <img src="img/crudo1.jpg" alt="Imagen de fondo" class="img-fluid rounded-3 scrollreveal">
-            <div class="mt-4">
-                <h5 class="text-center scrollreveal "><span class="leixo-demo">D</span>escubre más</h5>
-                <p class="text-center scrollreveal">Suscríbete para recibir las últimas noticias y promociones.</p>
-                <div class="text-center">
-                    <i class="bi bi-facebook fs-4 text-primary scrollreveal"></i>
-                    <i class="bi bi-twitter fs-4 text-primary mx-3 scrollreveal"></i>
-                    <i class="bi bi-instagram fs-4 text-primary scrollreveal"></i>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-6">
-            <div class="p-4 bg-light rounded-3 scrollreveal">
-                <h5 class="text-center mb-4">R<span class="leixo-demo">E</span>GISTRA TE Y D<span class="leixo-demo">I</span>SFRUTA DE M<span class="leixo-demo">Á</span>S OF<span class="leixo-demo">E</span>RTAS</h5>
-                <form class="form-horizontal">
-                    <div class="form-floating mb-3">
-                        <input type="text" class="form-control scrollreveal" id="name" placeholder="Tu nombre" required>
-                        <label for="name">Tu nombre</label>
-                    </div>
-                    <div class="form-floating mb-3">
-                        <input type="email" class="form-control scrollreveal" id="email" placeholder="Tu correo electrónico" required>
-                        <label for="email">Tu correo electrónico</label>
-                    </div>
-                    <div class="form-floating mb-3">
-                        <input type="text" class="form-control scrollreveal" id="subject" placeholder="Asunto" required>
-                        <label for="subject">Asunto</label>
-                    </div>
-                    <button type="submit" class="btn btn-primary btn-lg w-100 scrollreveal">Registrarse</button>
-                </form>
-            </div>
-        </div>
+<!-- Formulario de Suscripción -->
+<section class="container py-5">
+  <div class="row align-items-center">
+    <div class="col-md-6 text-center">
+      <img src="img/crudo1.jpg" class="img-fluid rounded-3" alt="Imagen de suscripción">
+      <h5 class="mt-4">Descubre más</h5>
+      <p>Suscríbete para recibir noticias y promociones.</p>
+    </div>
+    <div class="col-md-6">
+      <div class="p-4 bg-light rounded-3">
+        <h5 class="text-center mb-4">REGÍSTRATE Y DISFRUTA DE MÁS OFERTAS</h5>
+        <form>
+          <div class="form-floating mb-3">
+            <input type="text" class="form-control" id="name" placeholder="Tu nombre" required>
+            <label for="name">Tu nombre</label>
+          </div>
+          <div class="form-floating mb-3">
+            <input type="email" class="form-control" id="email" placeholder="Tu correo" required>
+            <label for="email">Tu correo electrónico</label>
+          </div>
+          <button type="submit" class="btn btn-primary w-100">Registrarse</button>
+        </form>
+      </div>
     </div>
   </div>
+</section>
 
-  <!-- maps -->
-  <section class="my-5">
-    <div class="container-fluid px-0">
-      <div class="row g-0">
-        <!-- Google Map -->
-        <div class="col-12">
-          <div class="map-container position-relative overflow-hidden rounded shadow-lg">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3982.6867579913987!2d-76.52493452526839!3d3.426242696548285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e30a745fc123575%3A0xb530d3a7c2da6edc!2sEXPOMAR!5e0!3m2!1ses!2sco!4v1736521896220!5m2!1ses!2sco"
-              width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy"
-              class="animate__animated animate__fadeInLeft"
-            ></iframe>
-          </div>
-        </div>
-      </div>
+<!-- Google Maps -->
+<section class="my-5">
+  <div class="container-fluid px-0">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3982.6867357063393!2d-76.52493452596603!3d3.4262480513887454!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e30a745fc123575%3A0xb530d3a7c2da6edc!2sEXPOMAR!5e0!3m2!1ses!2sco!4v1738604629282!5m2!1ses!2sco" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-light text-dark py-5">
+  <div class="container text-center">
+    <img src="img/logo-nav.png" alt="Logo" class="mb-3" style="max-width: 150px;">
+    <p class="text-muted">Ofrecemos productos de alta calidad con el mejor servicio al cliente.</p>
+    <div class="d-flex justify-content-center gap-3 mb-3">
+      <a href="#" class="text-dark fs-4"><i class="bi bi-facebook"></i></a>
+      <a href="#" class="text-dark fs-4"><i class="bi bi-twitter"></i></a>
+      <a href="#" class="text-dark fs-4"><i class="bi bi-instagram"></i></a>
     </div>
-  </section>
+    <p class="mb-0">&copy; 2025 EXPOMAR. Todos los derechos reservados.</p>
+  </div>
+</footer>
 
-
-  <footer class="bg-light text-dark py-5">
-    <div class="container">
-      <div class="row g-4">
-        <!-- Logo, Iconos e Información -->
-        <div class="col-md-4">
-          <!-- Logo -->
-          <img src="img/logo-nav.png" alt="Logo de la empresa" class="img-fluid mb-3" style="max-width: 150px;">
-
-          <!-- Fila de iconos horizontales -->
-          <div class="d-flex justify-content-start gap-4 mb-4">
-            <a href="#" class="text-dark fs-4 transition-icon" aria-label="Ubicación">
-              <i class="fa-brands fa-whatsapp"></i>
-            </a>
-            <a href="#" class="text-dark fs-4 transition-icon" aria-label="Instagram">
-              <i class="fa-brands fa-instagram"></i>
-            </a>
-            <a href="#" class="text-dark fs-4 transition-icon" aria-label="Mapa">
-              <i class="fas fa-map-marker-alt"></i>
-            </a>
-          </div>
-
-          <!-- Información sobre la empresa -->
-          <p class="text-muted">Ofrecemos productos de alta calidad con el mejor servicio al cliente. Tu satisfacción es nuestra prioridad.</p>
-
-          <div class="d-flex gap-3 mt-3">
-            <a href="#" class="text-dark fs-4 transition-icon" aria-label="Facebook">
-              <i class="bi bi-facebook"></i>
-            </a>
-            <a href="#" class="text-dark fs-4 transition-icon" aria-label="Twitter">
-              <i class="bi bi-twitter"></i>
-            </a>
-            <a href="#" class="text-dark fs-4 transition-icon" aria-label="Instagram">
-              <i class="bi bi-instagram"></i>
-            </a>
-            <a href="#" class="text-dark fs-4 transition-icon" aria-label="LinkedIn">
-              <i class="bi bi-linkedin"></i>
-            </a>
-          </div>
-        </div>
-
-        <!-- Navegación del sitio -->
-        <div class="col-md-4">
-          <h5 class="text-dark">Navegación</h5>
-          <ul class="list-unstyled">
-            <li><a href="#" class="text-dark text-decoration-none">Inicio</a></li>
-            <li><a href="#" class="text-dark text-decoration-none">Productos</a></li>
-            <li><a href="#" class="text-dark text-decoration-none">Nosotros</a></li>
-            <li><a href="#" class="text-dark text-decoration-none">Contacto</a></li>
-            <li><a href="#" class="text-dark text-decoration-none">Blog</a></li>
-          </ul>
-        </div>
-
-        <!-- Imágenes de certificaciones -->
-        <div class="col-md-4">
-          <h5 class="text-dark">Certificaciones</h5>
-          <div class="d-flex gap-3 align-items-center">
-            <div>
-              <img src="img/certifi-1.png" alt="Certificación 1" class="rounded" style="width: 80px; height: 80px; object-fit: cover;">
-              <p class="mb-0 text-muted text-center">Frescura</p>
-            </div>
-            <div>
-              <img src="img/certifi-2.png" alt="Certificación 2" class="rounded" style="width: 80px; height: 80px; object-fit: cover;">
-              <p class="mb-0 text-muted text-center">Sostenibilidad</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Formulario de contacto -->
-      <div class="row mt-4">
-        <div class="col-12">
-          <h5 class="text-dark">Contáctanos</h5>
-          <form>
-            <div class="row">
-              <div class="col-md-4 mb-3">
-                <label for="name" class="form-label text-dark">Nombre</label>
-                <input type="text" class="form-control" id="name" placeholder="Tu nombre">
-              </div>
-              <div class="col-md-4 mb-3">
-                <label for="email" class="form-label text-dark">Correo Electrónico</label>
-                <input type="email" class="form-control" id="email" placeholder="Tu correo electrónico">
-              </div>
-              <div class="col-md-4 mb-3">
-                <label for="message" class="form-label text-dark">Mensaje</label>
-                <textarea class="form-control" id="message" rows="1" placeholder="Escribe tu mensaje"></textarea>
-              </div>
-            </div>
-            <button type="submit" class="btn btn-primary w-100">Enviar</button>
-          </form>
-        </div>
-      </div>
-
-      <!-- Línea divisoria -->
-      <hr class="my-4 border-secondary">
-      <div class="text-center text-dark">
-        <p class="mb-0">&copy; 2025 EXPOMAR. Todos los derechos reservados.</p>
-      </div>
-    </div>
-  </footer>
 
 
 
