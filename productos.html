@@ -267,15 +267,102 @@
 
 <!-- Footer -->
 <footer class="bg-light text-dark py-5">
-  <div class="container text-center">
-    <img src="img/logo-nav.png" alt="Logo" class="mb-3" style="max-width: 150px;">
-    <p class="text-muted">Ofrecemos productos de alta calidad con el mejor servicio al cliente.</p>
-    <div class="d-flex justify-content-center gap-3 mb-3">
-      <a href="#" class="text-dark fs-4"><i class="bi bi-facebook"></i></a>
-      <a href="#" class="text-dark fs-4"><i class="bi bi-twitter"></i></a>
-      <a href="#" class="text-dark fs-4"><i class="bi bi-instagram"></i></a>
+  <div class="container">
+    <div class="row g-4">
+      <!-- Logo, Iconos e Información -->
+      <div class="col-md-4">
+        <!-- Logo -->
+        <img src="img/logo-nav.png" alt="Logo de la empresa" class="img-fluid mb-3" style="max-width: 150px;">
+
+        <!-- Fila de iconos horizontales -->
+        <div class="d-flex justify-content-start gap-4 mb-4">
+          <a href="#" class="text-dark fs-4 transition-icon" aria-label="Ubicación">
+            <i class="fa-brands fa-whatsapp"></i>
+          </a>
+          <a href="#" class="text-dark fs-4 transition-icon" aria-label="Instagram">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a href="#" class="text-dark fs-4 transition-icon" aria-label="Mapa">
+            <i class="fas fa-map-marker-alt"></i>
+          </a>
+        </div>
+
+        <!-- Información sobre la empresa -->
+        <p class="text-muted">Ofrecemos productos de alta calidad con el mejor servicio al cliente. Tu satisfacción es nuestra prioridad.</p>
+
+        <div class="d-flex gap-3 mt-3">
+          <a href="#" class="text-dark fs-4 transition-icon" aria-label="Facebook">
+            <i class="bi bi-facebook"></i>
+          </a>
+          <a href="#" class="text-dark fs-4 transition-icon" aria-label="Twitter">
+            <i class="bi bi-twitter"></i>
+          </a>
+          <a href="#" class="text-dark fs-4 transition-icon" aria-label="Instagram">
+            <i class="bi bi-instagram"></i>
+          </a>
+          <a href="#" class="text-dark fs-4 transition-icon" aria-label="LinkedIn">
+            <i class="bi bi-linkedin"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Navegación del sitio -->
+      <div class="col-md-4">
+        <h5 class="text-dark">Navegación</h5>
+        <ul class="list-unstyled">
+          <li><a href="#" class="text-dark text-decoration-none">Inicio</a></li>
+          <li><a href="#" class="text-dark text-decoration-none">Productos</a></li>
+          <li><a href="#" class="text-dark text-decoration-none">Nosotros</a></li>
+          <li><a href="#" class="text-dark text-decoration-none">Contacto</a></li>
+          <li><a href="#" class="text-dark text-decoration-none">Blog</a></li>
+        </ul>
+      </div>
+
+      <!-- Imágenes de certificaciones -->
+      <div class="col-md-4">
+        <h5 class="text-dark">Certificaciones</h5>
+        <div class="d-flex gap-3 align-items-center">
+          <div>
+            <img src="img/certifi-1.png" alt="Certificación 1" class="rounded" style="width: 80px; height: 80px; object-fit: cover;">
+            <p class="mb-0 text-muted text-center">Frescura</p>
+          </div>
+          <div>
+            <img src="img/certifi-2.png" alt="Certificación 2" class="rounded" style="width: 80px; height: 80px; object-fit: cover;">
+            <p class="mb-0 text-muted text-center">Sostenibilidad</p>
+          </div>
+        </div>
+      </div>
     </div>
-    <p class="mb-0">&copy; 2025 EXPOMAR. Todos los derechos reservados.</p>
+
+    <!-- Formulario de contacto -->
+    <div class="row mt-4">
+      <div class="col-12">
+        <h5 class="text-dark">Contáctanos</h5>
+        <form>
+          <div class="row">
+            <div class="col-md-4 mb-3">
+              <label for="name" class="form-label text-dark">Nombre</label>
+              <input type="text" class="form-control" id="name" placeholder="Tu nombre">
+            </div>
+            <div class="col-md-4 mb-3">
+              <label for="email" class="form-label text-dark">Correo Electrónico</label>
+              <input type="email" class="form-control" id="email" placeholder="Tu correo electrónico">
+            </div>
+            <div class="col-md-4 mb-3">
+              <label for="message" class="form-label text-dark">Mensaje</label>
+              <textarea class="form-control" id="message" rows="1" placeholder="Escribe tu mensaje"></textarea>
+            </div>
+          </div>
+          <button type="submit" class="btn btn-primary w-100">Enviar</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Línea divisoria -->
+    <hr class="my-4 border-secondary">
+    <div class="text-center text-dark">
+      <p class="mb-0">&copy; 2025 EXPOMAR. Todos los derechos reservados.</p>
+    </div>
   </div>
 </footer>
 
